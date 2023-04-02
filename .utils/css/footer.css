@@ -1,8 +1,17 @@
+body {
+    background-color: white;
+}
 
+header {
+    background-color: brown;
+}
+
+footer {
+    background-color: burlywood;
+}
 /* ========== Phone devices ========== */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
     body {
         background-color: aquamarine;
     }
-    
 }
