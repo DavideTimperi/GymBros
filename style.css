@@ -1,0 +1,128 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    background-color: rgb(146, 108, 108);
+    overflow: auto;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+#account {
+    width: 100%;
+    background-color: #444;
+    height: auto;
+    overflow: hidden;
+}
+
+#account div {
+    text-align: right;
+}
+
+#account a {
+    text-align: right;
+    color: lawngreen;
+    font-size: 14px;
+    padding-right: 5%;
+    text-decoration: none;
+}
+
+header {
+    text-align: left;
+    padding: 2%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 50px;
+}
+
+nav ul li {
+    float: left;
+    width: 15%;
+    border: 1px solid #621919;
+}
+
+nav ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 5% ;
+}
+
+nav ul li a:hover, nav ul li.active a {
+    background-color: black;
+    color: lawngreen;
+}
+
+.banner {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.left-col {
+    width: 55%;
+    float: left;
+    padding: 1%;
+}
+
+.sidebar {
+    width: 40%;
+    float: right;
+    padding: 1%;
+}
+
+.one-third {
+    width: 29%;
+    float: left;
+    padding: 2%;
+}
+
+.fix {
+    clear: both;
+}
+
+footer {
+    background-color: #444;
+    width: 100%;
+    padding: 2%;
+}
+
+footer p {
+    text-align: left;
+    
+    font-size: 14px;
+    padding-right: 5%;
+}
+
+.social {
+    font-size: 400%;
+    height: auto;
+    overflow: hidden;
+}
+
+.social a {
+    color: black;
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 760px){
+
+ }
