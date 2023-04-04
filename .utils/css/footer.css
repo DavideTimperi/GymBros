@@ -5,24 +5,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.content1{
-  position: relative;
-  margin: 130px auto;
-  text-align: center;
-  padding: 0 20px;
-}
-.content1 .text{
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #202020;
-}
-.content1 .p{
-  font-size: 2.1875rem;
-  font-weight: 600;
-  color: #202020;
-}
+
 footer{
-  position: fixed;
+	position:absolute;
   bottom: 0px;
   width: 100%;
   background: #111;
@@ -142,21 +127,15 @@ footer{
 .right form .btn button:hover{
   background: #000;
 }
-.bottom center{
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: #151515;
+.bottom {
+    padding: 15px 0;
+    text-align: center;
 }
-.bottom center span{
-  color: #656565;
+
+.bottom span {
+    color:rgba(255, 255, 255, 0.2)
 }
-.bottom center a{
-  color: #f12020;
-  text-decoration: none;
-}
-.bottom center a:hover{
-  text-decoration: underline;
-}
+
 @media screen and (max-width: 900px) {
   footer{
     position: relative;

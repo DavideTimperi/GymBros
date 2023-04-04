@@ -485,38 +485,6 @@ input:nth-child(5):hover{
 
 }
 
-/* ---------- footer section ---------- */
-
-.footer-bg-color{
-    background-color: var(--footerBg-color);
-}
-
-footer .social-media{
-    text-align: center;
-}
-
-footer .social-media i{
-    color: white;
-    margin: 1rem 0 0 1rem;
-    cursor: pointer;
-}
-
-footer .social-media i:hover{
-    color: var(--main-color);
-}
-
-.footer-section p{
-    text-align: center;
-    padding: .5rem;
-    color: white;
-    margin: 0;
-}
-
-
-
-
-
-
 /* ---------- media query ---------- */
 
 @media(max-width:768px){
@@ -567,14 +535,3 @@ footer .social-media i:hover{
         font-size: 80%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
