@@ -1,16 +1,16 @@
 *{
 	margin: 0;
 	padding: 0;
-	color: #d9d9d9;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
 
 footer{
-	position:absolute;
+	/*position:absolute;*/ /* lo sovrappone alla home*/
 	bottom: 0px;
 	width: 100%;
 	background: #111;
+	color: #d9d9d9;
 }
 
 .main-content{
