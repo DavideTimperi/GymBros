@@ -120,7 +120,10 @@ footer{
 	background: #151515;
 	padding-left: 10px;
 	border: 1px solid #222222;
+	color: white;
 }
+
+
 
 .right form input{
 	height: 35px;
@@ -140,11 +143,12 @@ footer{
 	font-size: 1.0625rem;
 	font-weight: 500;
 	cursor: pointer;
-	transition: .3s;
+	transition: 0.5s;
 }
 
 .right form .btn button:hover{
 	background: #000;
+	color: #fff
 }
 
 .bottom {
