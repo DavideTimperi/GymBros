@@ -79,7 +79,7 @@ header .headerWraper{
     margin-left: 2rem;
     font-size: 1rem;
     font-weight: 500;
-    color: white;
+    color: black;
 }
 
 li{
@@ -134,7 +134,7 @@ li{
 
  /* ---------- home section ---------- */
 .bg{
-    background-image: url(.utils/img/img1.jpg);
+    background-image: url("../images/img1.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -314,7 +314,7 @@ li{
 /* ---------- schedules section ---------- */
 
 .schedules-bg-img{
-    background-image: url(".utils/img/push-up.jpg");
+    background-image: url("../images/push-up.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -442,7 +442,7 @@ input:nth-child(5):hover{
 }
 
 .contact .map-wraper{
-    background-image: url(".utils/img/Rome.png");
+    background-image: url("../images/Rome.png");
     width: 100%;
     min-height: 300px;
     height: 100%;
