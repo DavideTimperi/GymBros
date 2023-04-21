@@ -15,174 +15,227 @@
 
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/logo_icon.ico" type="image/x-icon">
     </head>
 
     <body>
-        <a href="#" class="scroll-up">
-            <i class="bx bx-chevron-up bx-sm"></i>
-        </a>
-        <!-- header -->
-        <header class="scroll">
-            <nav class="headerWraper layout">
-                <div class="logo">
-                    <a href="home.html"> <b>Gymbros</b> </a>
-                </div>
-                <div>
-                    <ul class="nav">
-                        <li><i class="fa fa-person"></i></li>
-                        <li><a href="home.html" class="nav-link link-active">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#courses" class="nav-link">Courses</a></li>
-                        <li><a href="#schedules" class="nav-link">Schedules</a></li>
-                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="menu">
-                    <i class="bx bx-menu bx-md"></i>
-                </div>
-            </nav>
-        </header>
+        <!-- Header -->
+        <h2>PASTE THE HEADER</h2>
+        <!-- Checkout -->
+        <!DOCTYPE html>
 
-        <!-- Checkout -->    
-        <h2>Responsive Checkout Form</h2>
-        <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
-        <div class="row">
-        <div class="col-75">
-            <div class="container">
-            <form action="../php/checkout.php">
-            
-                <div class="row">
-                <div class="col-50">
-                    <h3>Billing Address</h3>
-                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                    <input type="text" id="email" name="email" placeholder="john@example.com">
-                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                    <label for="city"><i class="fa fa-institution"></i> City</label>
-                    <input type="text" id="city" name="city" placeholder="New York">
-
-                    <div class="row">
-                    <div class="col-50">
-                        <label for="state">State</label>
-                        <input type="text" id="state" name="state" placeholder="NY">
-                    </div>
-                    <div class="col-50">
-                        <label for="zip">Zip</label>
-                        <input type="text" id="zip" name="zip" placeholder="10001">
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-50">
-                    <h3>Payment</h3>
-                    <label for="fname">Accepted Cards</label>
-                    <div class="icon-container">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <i class="fa-brands fa-paypal"></i>
-                        <i class="fa-brands fa-cc-visa"></i>
-                    </div>
-                    <label for="cname">Name on Card</label>
-                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                    <label for="ccnum">Credit card number</label>
-                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                    <label for="expmonth">Exp Month</label>
-                    <input type="month" id="expmonth" name="expmonth" placeholder="MM/YY">
-                    <div class="row">
-                    <div class="col-50">
-                        <label for="expyear">Exp Year</label>
-                        <input type="text" id="expyear" name="expyear" placeholder="2018">
-                    </div>
-                    <div class="col-50">
-                        <label for="cvv">CVV</label>
-                        <input type="text" id="cvv" name="cvv" placeholder="352">
-                    </div>
-                    </div>
-                </div>
+        <html lang="en">
+            <head>        
+                <title>Checkout</title>
+               
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+                <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+                <link rel="stylesheet" href="../.utils/css/header.css">
+                <link rel="stylesheet" href="../.utils/css/checkout.css">
+                <link rel="stylesheet" href="../.utils/css/footer.css">
+        
+                <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                <link rel="icon" href="/images/logo_icon.ico" type="image/x-icon">
+            </head>
+        
+            <body>
+                <!-- Header -->
+                <h2>PASTE THE HEADER</h2>
+                <!-- Checkout -->
+                <main class="container">
+        
+                    <h1 class="heading">
+                      <ion-icon name="cart-outline"></ion-icon> Shopping Cart
+                    </h1>
                 
-                </div>
-                <label>
-                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                </label>
-                <input type="submit" value="Continue to checkout" class="btn">
-            </form>
-            </div>
-        </div>
-        <div class="col-25">
-            <div class="container">
-            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-            <hr>
-            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-            </div>
-        </div>
-        </div>
+                    <div class="item-flex">
+                      <!--
+                       - checkout section
+                      -->
+                      <section class="checkout"
+                        <h2 class="section-heading">Payment Details</h2>
+                        <div class="payment-form">
+                          <div class="payment-method">
+                            <button class="method selected">
+                              <ion-icon name="card"></ion-icon>
+                              <span>Credit Card</span>
+                              <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+                            </button>
+                
+                            <button class="method">
+                              <ion-icon name="logo-paypal"></ion-icon>
+                              <span>PayPal</span>
+                              <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                            </button>
+                          </div>
+            
+                          <form action="#">
+                
+                            <div class="cardholder-name">
+                              <label for="cardholder-name" class="label-default">Cardholder name</label>
+                              <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+                            </div>
+                
+                            <div class="card-number">
+                              <label for="card-number" class="label-default">Card number</label>
+                              <input type="number" name="card-number" id="card-number" class="input-default">
+                            </div>
+                
+                            <div class="input-flex">
+                              <div class="expire-date">
+                                <label for="expire-date" class="label-default">Expiration date</label>
+                                <div class="input-flex">
+                                  <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                                    class="input-default">
+                                  /
+                                  <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                                    class="input-default">
+                                </div>
+                              </div>
+                              <div class="cvv">
+                                <label for="cvv" class="label-default">CVV</label>
+                                <input type="number" name="cvv" id="cvv" class="input-default">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <button class="btn btn-primary">
+                          <b>Pay</b> $ <span id="payAmount">2.15</span>
+                        </button>
+                      </section>
+                
+                
+                      <!--
+                        - cart section
+                      -->
+                      <section class="cart">
+                        <div class="cart-item-box">
+                          <h2 class="section-heading">Order Summery</h2>
+                          <div class="product-card">
+                            <div class="card">
+                              <div class="img-box">
+                                <img src="./images/green-tomatoes.jpg" alt="Green tomatoes" width="80px" class="product-img">
+                              </div>
+                              <div class="detail">
+                                <h4 class="product-name">Green Tomatoes 1 Kilo</h4>
+                                <div class="wrapper">
+                                  <div class="product-qty">
+                                    <button id="decrement">
+                                      <ion-icon name="remove-outline"></ion-icon>
+                                    </button>
+                                    <span id="quantity">1</span>
+                                    <button id="increment">
+                                      <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                  </div>
+                                  <div class="price">
+                                    $ <span id="price">1.25</span>
+                                  </div>
+                                </div>
+                            </div>
+                              <button class="product-close-btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                              </button>
+                            </div>
+                          </div>
+                
+                          <div class="product-card">
+                            <div class="card">
+                              <div class="img-box">
+                                <img src="./images/cabbage.jpg" alt="Cabbage" width="80px" class="product-img">
+                              </div>
+                              <div class="detail">
+                                <h4 class="product-name">Cabbage 1 Pcs</h4>
+                                <div class="wrapper">
+                                  <div class="product-qty">
+                                    <button id="decrement">
+                                      <ion-icon name="remove-outline"></ion-icon>
+                                    </button>
+                                    <span id="quantity">1</span>
+                                    <button id="increment">
+                                      <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                  </div>
+                                  <div class="price">
+                                    $ <span id="price">0.80</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="product-close-btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="wrapper">
+                          <div class="discount-token">
+                            <label for="discount-token" class="label-default">Gift card/Discount code</label>
+                            <div class="wrapper-flex">
+                              <input type="text" name="discount-token" id="discount-token" class="input-default">
+                              <button class="btn btn-outline">Apply</button>
+                            </div>
+                          </div>
+                
+                          <div class="amount">
+                            <div class="subtotal">
+                              <span>Subtotal</span> <span>$ <span id="subtotal">2.05</span></span>
+                            </div>
+                            <div class="tax">
+                              <span>Tax</span> <span>$ <span id="tax">0.10</span></span>
+                            </div>
+                            <div class="shipping">
+                              <span>Shipping</span> <span>$ <span id="shipping">0.00</span></span>
+                            </div>
+                            <div class="total">
+                              <span>Total</span> <span>$ <span id="total">2.15</span></span>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+
+                    <button<a><a href="thank_you.html">Submit</a></button>
+                  </main>
+                
+                
+                
+                
+                
+                
+                  <!--
+                    - custom js link
+                  -->
+                  <script src="./script.js"></script>
+                
+                  <!--
+                    - ionicon link
+                  -->
+                  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                
+                </body>
+                
+                </html>
+        
+        
+        
+                <!-- footer -->
+                <h2>PASTE THE FOOTER</h2>
+                <!-- main.js -->    
+                <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
+                <script src="checkout.js"></script>
+            </body>
+        </html>
+
 
         <!-- footer -->
-
-        <footer class="footer">
-            <div class="main-content">
-            <div class="left box">
-                <h2>About us</h2>
-                <div class="content">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis sequi veniam molestiae inventore quibusdam quaerat repudiandae ad temporibus explicabo, numquam porro ut aliquam provident non. Adipisci ad aliquam illo!</p>
-                <div class="social">
-                    <a href="#"><span class="fab fa-facebook-f"></span></a>
-                    <a href="#"><span class="fab fa-twitter"></span></a>
-                    <a href="#"><span class="fab fa-instagram"></span></a>
-                    <a href="#"><span class="fab fa-youtube"></span></a>
-                </div>
-                </div>
-            </div>
-            <div class="center box">
-                <h2>Address</h2>
-                <div class="content">
-                <div class="place">
-                    <span class="fas fa-map-marker-alt"></span>
-                    <span class="text">Rome, Italy</span>
-                </div>
-                <div class="phone">
-                    <span class="fas fa-phone"></span>
-                    <span class="text">+39 000 000 0000</span>
-                </div>
-                <div class="email">
-                    <span class="fas fa-envelope"></span>
-                    <span class="text">help@gymbros.com</span>
-                </div>
-                </div>
-            </div>
-            <div class="right box">
-                <h2>Contact us</h2>
-                <div class="content">
-                <form action="#">
-                    <div class="email">
-                    <div class="text">Email *</div>
-                    <input type="email" required>
-                    </div>
-                    <div class="msg">
-                    <div class="text">Message *</div>
-                    <textarea rows="2" cols="25" required></textarea>
-                    </div>
-                    <div class="btn">
-                    <button type="submit">Send</button>
-                    </div>
-                </form>
-                </div>
-            </div>
-            </div>
-            <div class="bottom">
-            <p><span class="far fa-copyright"></span><span> Copyrigth 3050 by nobody. All rights reserved.</span></p>
-            </div>
-        </footer>
-
+        <h2>PASTE THE FOOTER</h2>
         <!-- main.js -->    
-        <script src="main.js"></script>
+        <script src="checkout.js"></script>
     </body>
 </html>
