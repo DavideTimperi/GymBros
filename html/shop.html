@@ -14,10 +14,11 @@
         <link rel="stylesheet" href="../.utils/css/footer.css"> 
         <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon">
     
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
       </head>
 
-    <body class="container">
+    <body class="contianer">
       <a href="#" class="scroll-up">
           <i class="bx bx-chevron-up bx-sm"></i>
       </a>
@@ -30,7 +31,12 @@
               <div>
                   <ul class="nav">
                       <li><a href="home.html" class="nav-link link-active">Home</a></li>
-                      <li><a href="#about" class="nav-link">About</a></li>
+                      <li><a href="#about" class="nav-link">  <i onclick="myFunction()" class="dropbtn fa-solid fa-cart-shopping"></i>
+                        <div id="myDropdown" class="dropdown-content">
+                          <p>Lorem</p>
+                          <button class="go-to-chart">Checkout <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                      </a>
                       <li><a href="#courses" class="nav-link">Courses</a></li>
                       <li><a href="#schedules" class="nav-link">Schedules</a></li>
                       <li><a href="#pricing" class="nav-link">Pricing</a></li>
@@ -44,25 +50,19 @@
       </header>
 
       <!-- Shop -->   
-      <div>
-        <div class="title-shop">
-          <h2>SHOP</h2>
-        </div>
-        <main>            
-          <h2>ALL PRODUCTS</h2>
-          <div class="shop">
-            <div class="grid-container">
-              <div class="grid-item">
-                <div class="card">
-                  <img src="../.utils/images/logo.png" alt="Avatar" style="width:100%">
-                  <h4>Lorem, ipsum.</h4>
-                  <p>Price <i class="fa-solid fa-dollar"></i></p>
-                  <button class="button-add"><i class="fa-solid fa-cart-plus"></i></button>
-                </div>
-              </div>
-            </div>  
-        </main>
+      <div class="title-shop">
+        <h2>SHOP</h2>
       </div>
+      <main>            
+        <h2>ALL PRODUCTS</h2>
+        <div class="shop">
+          <div class="grid-container"></div>
+          
+        </div>  
+        <button class="load-more">Load More</button>
+      </main>
+
+
       <!-- footer -->
       <footer class="footer">
         <div class="main-content">
@@ -71,10 +71,10 @@
               <div class="content">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt omnis sequi veniam molestiae inventore quibusdam quaerat repudiandae ad temporibus explicabo, numquam porro ut aliquam provident non. Adipisci ad aliquam illo!</p>
                 <div class="social">
-                    <a href="#"><span class="fab fa-facebook-f"></span></a>
-                    <a href="#"><span class="fab fa-twitter"></span></a>
-                    <a href="#"><span class="fab fa-instagram"></span></a>
-                    <a href="#"><span class="fab fa-youtube"></span></a>
+                    <a href="#facebook"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#twitter"><span class="fab fa-twitter"></span></a>
+                    <a href="#instagram"><span class="fab fa-instagram"></span></a>
+                    <a href="#youtube"><span class="fab fa-youtube"></span></a>
                 </div>
               </div>
           </div>
@@ -108,7 +108,7 @@
                 <textarea rows="2" cols="25" required></textarea>
                 </div>
                 <div class="btn">
-                <button type="submit">Send</button>
+                  <button type="submit" >Send</button>
                 </div>
             </form>
             </div>
@@ -120,6 +120,6 @@
     </footer>
         
     <!-- js -->    
-    <script src="shop.js"></script>
+    <script src="../js/shop.js"></script>
   </body>
 </html>

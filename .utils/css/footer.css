@@ -11,6 +11,7 @@ footer{
 	width: 100%;
 	background: #111;
 	color: #d9d9d9;
+	text-align: justify;
 }
 
 .main-content{
@@ -122,18 +123,18 @@ footer{
 
 .right form input, .right form textarea{
 	width: 100%;
-	font-size: 1.0625rem;
+	max-width: 700px;
+	font-size: 1rem;
 	background: #151515;
 	padding-left: 10px;
 	border: 1px solid #222222;
-	color: white;
+	color: white;	
+	outline-style: none;
+	min-height: 35px;
 }
 
-
-
-.right form input{
-	height: 35px;
-	outline-style: none;
+.right form textarea{
+	min-height: 80px;
 }
 
 .right form .btn{
@@ -146,6 +147,7 @@ footer{
 	border: none;
 	outline: none;
 	background: #f12020;
+	color: white;
 	font-size: 1.0625rem;
 	font-weight: 500;
 	cursor: pointer;
@@ -153,7 +155,7 @@ footer{
 }
 
 .right form .btn button:hover{
-	background: #000;
+	background: #7a1111;
 	color: #fff
 }
 
@@ -182,4 +184,7 @@ footer{
   .main-content .box{
     margin: 5px 0;
   }
+  .right form textarea{
+	min-height: 150px;
+}
 }
