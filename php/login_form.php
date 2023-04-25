@@ -1,3 +1,13 @@
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <?php
 
 @include 'config.php';
@@ -58,7 +68,12 @@ if(isset($_POST['submit'])){
       };
       ?>
       <input type="email" name="email" required placeholder="enter your email">
-      <input type="password" name="password" required placeholder="enter your password">
+      <input type="password" name="password" required placeholder="enter your password"  id ="myInput">
+      <input type="checkbox" onclick="myFunction()">Show Password
+
+
+
+
       <input type="submit" name="submit" value="login now" class="form-btn">
       <p>don't have an account? <a href="register_form.php">register now</a></p>
    </form>

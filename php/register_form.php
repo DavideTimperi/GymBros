@@ -1,3 +1,17 @@
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  var y= document.getElementById("myInput");
+  if (x.type === "password" && y.type ==="password") {
+    x.type = "text";
+    y.type="text"
+  } else {
+    x.type = "password";
+    y.type="password"
+  }
+}
+</script>
+
 <?php
 
 @include 'config.php';
@@ -61,8 +75,9 @@ if(isset($_POST['submit'])){
       ?>
       <input type="text" name="name" required placeholder="enter your name">
       <input type="email" name="email" required placeholder="enter your email">
-      <input type="password" name="password" required placeholder="enter your password">
-      <input type="password" name="cpassword" required placeholder="confirm your password">
+      <input type="password" name="password" required placeholder="enter your password" id="myInput">
+      <input type="password" name="cpassword" required placeholder="confirm your password" id="myInput2">
+      <input type="checkbox" onclick="myFunction()">Show Password
      
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
