@@ -20,6 +20,11 @@ if(isset($_POST['submit'])){
 
       $row = mysqli_fetch_array($result);
 
+     
+
+         $_SESSION['user_name'] = $row['name'];
+         header('location:user_page.php');
+
       
      
    }else{
