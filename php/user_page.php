@@ -22,7 +22,7 @@
 <div class="container">
 
    <div class="content">
-      <h3>hi, <span>user</span></h3>
+      <h3>hi, <span> buddy</span></h3>
      
       <p>this is an user page</p>
       <a href="login_form.php" class="btn">login</a>
