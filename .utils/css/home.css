@@ -34,6 +34,7 @@
 
 .home .content .description{
     margin-bottom: var(--mb-2);
+    margin-top: -6rem;
 }
 
 .home .content .btn{
