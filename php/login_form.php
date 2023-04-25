@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
 
      
 
-         $_SESSION['user_name'] = $row['name'];
+         
          header('location:user_page.php');
 
       
