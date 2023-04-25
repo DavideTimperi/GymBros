@@ -134,6 +134,10 @@ main h2 {
 }
 
 /* button */
+.dropbtn {
+  padding: 0;
+}
+
 .button-add {
   padding: 8px;
   width: 80%;
