@@ -18,8 +18,6 @@ if(isset($_POST['submit'])){
 
    if(mysqli_num_rows($result) > 0){
 
-      
-
      
 
          $_SESSION['user_name'] = $row['name'];
