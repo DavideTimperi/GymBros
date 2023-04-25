@@ -6,10 +6,10 @@ session_start();
 
 if(isset($_POST['submit'])){
 
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
+   
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = md5($_POST['password']);
-   $cpass = md5($_POST['cpassword']);
+  
    
 
    $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
