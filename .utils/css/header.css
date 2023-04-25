@@ -84,6 +84,11 @@ header .headerWraper{
     color: white;
 }
 
+.headerWraper .nav i{
+    color: white;
+    padding-left: 2rem;
+}
+
 li{
     list-style: none;
 }
@@ -139,14 +144,14 @@ li{
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -156,15 +161,15 @@ li{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding: 5px;
-  }
+}
   
-  .show {display: block;}
+.show {display: block;}
   
-  .go-to-chart {
+.go-to-chart {
     width: 100%;
     border: none;
     padding: 3px;
     background-color: cadetblue;
     color: white;
     margin: 0;
-  }
+}
