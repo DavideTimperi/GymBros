@@ -18,11 +18,11 @@ if(isset($_POST['submit'])){
 
    if(mysqli_num_rows($result) > 0){
 
-      $row = mysqli_fetch_array($result);
+      
 
      
 
-         
+         $_SESSION['user_name'] = $row['name'];
          header('location:user_page.php');
 
       
