@@ -52,26 +52,11 @@ if(isset($_POST['submit'])){
 
    
    <link rel="stylesheet" href="../.utils/css/login.css">
-   <link rel="stylesheet" href="../.utils/css/header.css">
+   
 
 </head>
 <body>
-<header class="scroll">
-          <nav class="headerWraper layout">
-              <div class="logo">
-                  <a href="../html/home.html"> <b>Gymbros</b> </a>
-              </div>
-              <div>
-                  <ul class="nav">
-                      <li><a href="../html/home.html" class="nav-link">Home</a></li>
-                      <li><a class="nav-link"><i onclick="myFunction()" class="dropbtn fa-solid fa-cart-shopping nav-link"></i>
-                        <div id="myDropdown" class="dropdown-content">
-                          <p>Lorem</p>
-                          <button class="go-to-chart">Checkout <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                      </a></li>
-                  </ul>
-              </div>
+
 <div class="form-container">
 
    <form action="" method="post">
