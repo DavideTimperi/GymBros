@@ -1,13 +1,10 @@
 <script>
 function myFunction() {
   var x = document.getElementById("myInput");
-  var y= document.getElementById("myInput");
-  if (x.type === "password" && y.type ==="password") {
+  if (x.type === "password") {
     x.type = "text";
-    y.type="text"
   } else {
     x.type = "password";
-    y.type="password"
   }
 }
 </script>
