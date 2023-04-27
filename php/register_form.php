@@ -6,6 +6,13 @@ function myFunction() {
   } else {
     x.type = "password";
   }
+  var y = document.getElementById("myInput2");
+  if(y.type ==="password"){
+   y.type="text";
+  }
+  else{
+   y.type="text";
+  }
 }
 </script>
 
