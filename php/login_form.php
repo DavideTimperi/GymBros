@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
 
    
    <link rel="stylesheet" href="../.utils/css/login.css">
-   <link rel="stylesheet" href="../.tils/css/header.css">
+   <link rel="stylesheet" href="../.utils/css/header.css">
 
 </head>
 <body>
