@@ -1,11 +1,4 @@
 let shop = document.getElementById("shop");
-
-/**
- * ! Basket to hold all the selected items
- * ? the getItem part is retrieving data from the local storage
- * ? if local storage is blank, basket becomes an empty array
- */
-
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 /**
@@ -42,7 +35,7 @@ let generateShop = () => {
 
 
 /**
- * ! used to increase the selected product item quantity by 1
+ * used to increase the selected product item quantity by 1
  */
 
 let increment = (id) => {
@@ -64,9 +57,8 @@ let increment = (id) => {
 };
 
 /**
- * ! used to decrease the selected product item quantity by 1
+ * used to decrease the selected product item quantity by 1
  */
-
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -84,7 +76,7 @@ let decrement = (id) => {
 };
 
 /**
- * ! To update the digits of picked items on each item card
+ * To update the digits of picked items on each item card
  */
 
 let update = (id) => {
@@ -94,7 +86,7 @@ let update = (id) => {
 };
 
 /**
- * ! To calculate total amount of selected Items
+ * To calculate total amount of selected Items
  */
 
 let calculation = () => {
