@@ -23,17 +23,10 @@
 
         <!-- Checkout -->
         <main>
-            <!--<form>-->
+            <!--<form id="checkout">-->
                 <!--cart-summary -->
-                <fieldset>
-                    <div class="product-summary">
-                        <!-- items append with checkout.js -->
-                    </div>
-                </fieldset>
-
                 <!-- payment method-->
                 <fieldset>
-                    <hr>
                     <h3>Payment</h3>
                     <div id="payment">
                         <p>Accepted cards</p>
@@ -43,39 +36,38 @@
                         <i class="fa fa-cc-discover fa-x" style="color:orange;"></i>
                         <i class="fa fa-cc-paypal fa-x" style="color:navy;"></i>
                         <br>
+                        <p>Required fields*</p>
                     </div>
 
-                    <label>Name on card: <input type="text"></label>
-                    <label>Card number: <input type="text"></label>
-                    <label>Expiration date: <input type="text"></label>
-                    <label>CVV: <input type="text"></label>
+                    <label><i class="fa-solid fa-user"></i> Name on card*: <input type="text" placeholder="Jhon Doe"></label>
+                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" placeholder="1111-2222-3333-4444" pattern="[0-9]"></label>
+                    <label><i class="fa-solid fa-calendar-days"></i> Expiration date*: <input type="month" value="2023-05" min="2023-05" language="fr-CA"></label>
+                    <label><i class="fa-solid fa-credit-card"></i> CVV*: <input type="text" placeholder="123" maxlength="3" minlength="3"></label>
                 </fieldset>
 
                 <fieldset>
-                    <hr>
                     <h3>Billing address</h3>
-                    <label>Full name: <input type="text"></label>
-                    <label>Email: <input type="text"></label>
-                    <label>Address: <input type="text"></label>
-                    <label>City: <input type="text"></label>
-                    <label>State: <input type="text"></label>
-                    <label>Postal code: <input type="text"></label>
+                    <label><i class="fa-solid fa-id-card"></i> Full name*: <input type="text" placeholder="Jhon M. Doe"></label>
+                    <label><i class="fa-solid fa-envelope"></i> Email*: <input type="email" placeholder="jhon@example.com" pattern="[a-zA-Z]+\@[a-zA-Z]+\.[a-zA-Z]+"></label>
+                    <label><i class="fa-solid fa-road"></i> Address: <input type="text" placeholder="Via del corso 31"></label>
+                    <label><i class="fa-solid fa-building"></i> City: <input type="text" placeholder="Rome"></label>
+                    <label><i class="fa-solid fa-flag"></i> State: <input type="text" placeholder="Italy"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" placeholder="00112"></label>
                     <label><input id="hide-check" type="checkbox" class="inline" checked>Shipping address is the same as billing one</label>
                 </fieldset>
                 
                 <fieldset id="shipping">
-                    <hr>
                     <h3>Shipping address</h3>
-                    <label>Full name: <input type="text"></label>
-                    <label>Email: <input type="text"></label>
-                    <label>Address: <input type="text"></label>
-                    <label>City: <input type="text"></label>
-                    <label>State: <input type="text"></label>
-                    <label>Postal code: <input type="text"></label>
+                    <label><i class="fa-solid fa-id-card"></i> Full name*: <input type="text" placeholder="Jhon M. Doe"></label>
+                    <label><i class="fa-solid fa-envelope"></i> Email*: <input type="email" placeholder="jhon@example.com" pattern="[a-zA-Z]+\@[a-zA-Z]+\.[a-zA-Z]+"></label>
+                    <label><i class="fa-solid fa-road"></i> Address: <input type="text" placeholder="Via del corso 20"></label>
+                    <label><i class="fa-solid fa-building"></i> City: <input type="text" placeholder="Rome"></label>
+                    <label><i class="fa-solid fa-flag"></i> State: <input type="text" placeholder="Italy"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" placeholder="00112"></label>
                 </fieldset>
 
                 <a href="thank_you.html"><button class="redirect-button">Pay now</button></a>
-            <!--</form>-->
+            </form>
         </main>
 
         <!-- footer -->

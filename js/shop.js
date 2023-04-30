@@ -1,138 +1,116 @@
-/*
-Generate html from php database
-*/
-window.onload = function() {
-  const rows = 12;
-  const manipulate = $(".grid-container")
-  for (let i=0; i<rows; i++){
-    let linked = "home.html";
-      let txt = "product_" + String(i+1)
-      let product_price = $("<i/>", {
-          text: " " + String(i),
-          class: "fa-solid fa-euro-sign",
-      });
-      let img = $("<img />", {
-          src: "../.utils/images/logo.png",
-          width: "100%",
-      });
-      let to_product = $('<a>',{
-        href: linked,
-        append: img
-     });
-      let button = $("<button/>", {
-          class: "button-add fa-solid fa-cart-plus",
-          onclick: "changeIcon(this);"
-      });
-      let br = document.createElement("br")
-      let product_name = $("<p/>", {
-          text: txt,
-      })
+let shop = document.getElementById("shop");
+
+/**
+ * ! Basket to hold all the selected items
+ * ? the getItem part is retrieving data from the local storage
+ * ? if local storage is blank, basket becomes an empty array
+ */
+
+let basket = JSON.parse(localStorage.getItem("data")) || [];
+
+/**
+ * ! Generates the shop with product cards composed of
+ * ! images, title, price, buttons, description
+ */
+
+let generateShop = () => {
+  return (shop.innerHTML = shopItemsData
+    .map((x) => {
+      let { id, name, desc, img, price } = x;
+      let search = basket.find((y) => y.id === id) || [];
+      return `
+        <div id=product-id-${id} class="item">
+          <img width="220" src=${img} alt="">
+          <div class="details">
+            <h3>${name}</h3>
+            <p>${desc}</p>
+            <div class="price-quantity">
+              <h2>$ ${price} </h2>
+              <div class="buttons">
+                <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
+                <div id=${id} class="quantity">${
+                  search.item === undefined ? 0 : search.item
+                }</div>
+                <i onclick="increment(${id})" class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+      `;}).join(""));
+};
 
 
-      let div = $("<div/>", {
-          class: "card",      // ('class' is still better in quotes)      // Finally, append to any selector
-      }); // << no need to do anything here as we defined the properties internally.
-      let div_grid = $("<div/>", {
-          class: "grid-item",      // ('class' is still better in quotes)      // Finally, append to any selector
-      });
 
-      div.append([to_product, product_name, br, product_price, br, button])
-      div_grid.append(div);
-      manipulate.append(div_grid)
+/**
+ * ! used to increase the selected product item quantity by 1
+ */
+
+let increment = (id) => {
+  let selectedItem = id;
+  let search = basket.find((x) => x.id === selectedItem.id);
+
+  if (search === undefined) {
+    basket.push({
+      id: selectedItem.id,
+      item: 1,
+    });
+  } else {
+    search.item += 1;
   }
-}
 
-/*
-Load more button
-*/
+  console.log(basket);
+  update(selectedItem.id);
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
+/**
+ * ! used to decrease the selected product item quantity by 1
+ */
+
+let decrement = (id) => {
+  let selectedItem = id;
+  let search = basket.find((x) => x.id === selectedItem.id);
+
+  if (search === undefined) return;
+  else if (search.item === 0) return;
+  else {
+    search.item -= 1;
+  }
+
+  update(selectedItem.id);
+  basket = basket.filter((x) => x.item !== 0);
+  console.log(basket);
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
+/**
+ * ! To update the digits of picked items on each item card
+ */
+
+let update = (id) => {
+  let search = basket.find((x) => x.id === id);
+  document.getElementById(id).innerHTML = search.item;
+  calculation();
+};
+
+/**
+ * ! To calculate total amount of selected Items
+ */
+
+let calculation = () => {
+  let cartIcon = document.getElementById("cartAmount");
+  cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
+};
+
 $(document).ready(function(){
   $(".load-more").click(function(){
-     $(".grid-item").fadeIn();
+     $(".item").fadeIn();
      $(this).fadeOut();
   });
 });
 
-
-/*
-Show/hid checkout
-*/
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-/*
-Function for the add-to-cart visual change
-*/
-function changeIcon(_this) {
-    /*
-        This code do:
-        -disable button
-        -change bg color and txt color of the 
-          add to cart button
-        -return to original
-        -enable button again
-    */
-    let timeout = 3000; //3 s    
-    let actual_bg_color = _this.style.backgroundColor;
-    let actual_txt_color = _this.style.color;
-    let bg_color = "rgb(0, 150, 0)";
-    let txt_color = "#FFFFFF"
-    let check_icon = 'fa-check'
-    let cart_icon = 'fa-cart-plus'
-
-    _this.enable = false
+generateShop();
+calculation();
 
 
-    _this.classList.add(check_icon)
-    _this.classList.remove(cart_icon)
 
-
-    _this.style.backgroundColor = bg_color;
-    _this.style.color = txt_color;
-    setTimeout(
-        () => {            
-
-            _this.classList.add(cart_icon)
-            _this.classList.remove(check_icon)
-            _this.style.backgroundColor = actual_bg_color;
-            _this.style.color = actual_txt_color;
-           
-        }
-    , timeout);
-    _this.enable =true
-}
-
-//PUT IN THE HEADER
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}

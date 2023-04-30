@@ -1,13 +1,22 @@
 /* general */
 main {
-  background-color: beige;
+  background-color:gainsboro;
   min-width: 200px;
+  padding: 4rem 2rem;
+
 }
 
+html, body
+{
+    height: 100% !important;
+    width: 100% !important;
+}
 hr {
   background-color: rgba(0, 0, 0, 0.365);
   height: 2px;
-  margin-bottom: 1rem;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1rem !important;
   border: none;
 }
 
@@ -52,12 +61,31 @@ label {
 /* cart section */
 .product-summary {
   border: none;
+  max-width: 80%;
+  min-width: 30%;
+  margin: 0 auto;
+  display: grid;
 }
 
 .product-summary div {
   margin-bottom: 2rem;
 }
 
+.product img {
+  grid-area: "img";
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+/* empty */
+.empty-cart {
+  width: 100%;
+  height: 100%;
+}
 /* payment method */
 #payment {
   text-align: center;
@@ -67,8 +95,6 @@ label {
 }
 
 .payment-method {
-  border: 2px solid #3b3b4f;
-  background-color: rgb(226, 226, 187);
   border-radius: 5px;
   width: 40%;
   text-align: center;
@@ -84,13 +110,13 @@ label {
 
 /* input */
 input {
-  background-color:rgb(241, 192, 132);
+  background-color: rgb(197, 197, 197);
   border: none;
   color: black;
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 1em;
-  padding: 5px 10px;
+  padding: 7px 10px;
   outline-style: none;
   transition: 1s;
 }
@@ -104,15 +130,21 @@ fieldset {
   outline-style: none;
 }
 
-input[type="text"]:focus{
-  background-color: rgb(245, 213, 171);
+input:focus{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 1s;
+}
+
+input[type="checkbox"]{
+  box-shadow: 0 0 0 0 !important;
   transition: 1s;
 }
 
 /* button */
 .redirect-button {
   margin: 0 auto;
-  margin-bottom: 1em !important;
+
   display: block;
   padding: 10px 15px;
   cursor: pointer;
@@ -132,19 +164,19 @@ input[type="text"]:focus{
 /* @media */
 @media (max-width: 750px){
   .main {
-    margin: 0rem 0.75rem;
+    margin: 0.75rem;
   }
 }
 
 @media (max-width: 560px){
   .main {
-    margin: 0rem 0.5rem;
+    margin: 0.5rem;
   }
 }
 
 @media (max-width: 450px){
   .main {
-    margin: 0rem 0.25rem;
+    margin: 0.25rem;
   }
 }
 
