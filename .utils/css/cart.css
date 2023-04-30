@@ -79,11 +79,23 @@ a {
 .removeAll {
   background-color: red;
 }
-.bi-x-lg {
-  color: red;
-  font-weight: bold;
+/* button */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
 }
 
+.fa-minus {
+  color:red;
+  cursor: pointer;
+}
+
+.fa-plus {
+  color: green;
+  cursor: pointer;
+}
 /* cart */
 
 .shopping-cart {
@@ -101,6 +113,11 @@ a {
   border: 2px solid #212529;
   border-radius: 5px;
   display: flex;
+  padding: 1rem;
+}
+
+.cart-item img{
+  padding-right: 1rem;
 }
 
 .title-price-x {
