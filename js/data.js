@@ -4,7 +4,7 @@ let shopItemsData = [
       name: "Favorite Shirt",
       price: 45,
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-      img: "../.utils/images/products/img1.jpg",
+      img: "../.utils/images/products/logo.png",
     },
     {
       id: "ioytrhndcv",
@@ -82,4 +82,5 @@ let shopItemsData = [
       price: 350,
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
       img: "../.utils/images/products/img1.jpg",    },
-  ];
+];
+

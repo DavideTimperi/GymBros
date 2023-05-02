@@ -1,11 +1,9 @@
 let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
-/**
- * ! Generates the shop with product cards composed of
- * ! images, title, price, buttons, description
- */
-
+/*
+Generates the shop with product cards 
+*/
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((x) => {
@@ -32,12 +30,9 @@ let generateShop = () => {
       `;}).join(""));
 };
 
-
-
-/**
- * used to increase the selected product item quantity by 1
- */
-
+/*
+Used to increase the selected product item quantity by 1
+*/
 let increment = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -56,9 +51,9 @@ let increment = (id) => {
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
-/**
- * used to decrease the selected product item quantity by 1
- */
+/*
+Used to decrease the selected product item quantity by 1
+*/
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -75,25 +70,26 @@ let decrement = (id) => {
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
-/**
- * To update the digits of picked items on each item card
- */
-
+/*
+To update the digits of picked items on each item card
+*/
 let update = (id) => {
   let search = basket.find((x) => x.id === id);
   document.getElementById(id).innerHTML = search.item;
   calculation();
 };
 
-/**
- * To calculate total amount of selected Items
- */
-
+/*
+To calculate total amount of selected Items
+*/
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
 
+/*
+Load more
+*/
 $(document).ready(function(){
   $(".load-more").click(function(){
      $(".item").fadeIn();

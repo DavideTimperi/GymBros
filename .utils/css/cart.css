@@ -21,6 +21,28 @@ a {
   color: white;
 }
 
+/* fa styiling */
+.fa .fa-circle-x .fa-minus .fa-plus {
+  cursor: pointer;
+}
+
+.fa-circle-xmark, .fa-minus {
+  color: red;
+}
+
+.fa-plus {
+  color: green;
+}
+
+.fa-circle-xmark{
+  transition: 1s;
+}
+
+.fa-circle-xmark:hover{
+  color: brown;
+  transition: 1s;
+}
+
 /**
 * ! Navbar STyles are here
 **/
@@ -64,45 +86,51 @@ a {
 .HomeBtn,
 .checkout,
 .removeAll {
-  background-color: #212529;
+  background-color: #c00000;
   color: white;
   border: none;
-  padding: 6px;
+  padding:0.5rem 1rem;
   border-radius: 3px;
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 10px;
+  transition: 1s;
 }
 
 .checkout {
   background-color: green;
 }
+
 .removeAll {
   background-color: red;
 }
-/* button */
-.buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  font-size: 16px;
+
+.HomeBtn:hover{
+  background-color: black;
+  transition: 1s;
 }
 
-.fa-minus {
-  color:red;
-  cursor: pointer;
+.checkout:hover {
+  background-color: rgb(0, 79, 0);
+  transition: 1s;
 }
 
-.fa-plus {
-  color: green;
-  cursor: pointer;
+.removeAll:hover {
+  background-color: brown;
+  transition: 1s;
 }
+
+
+
+
 /* cart */
 
 .shopping-cart {
   display: grid;
-  grid-template-columns: repeat(1, 320px);
+  grid-template-columns: 0.5fr;
+  margin: 0 auto;
   justify-content: center;
-  gap: 15px;
+  gap: 3rem;
 }
 
 /**
@@ -110,27 +138,32 @@ a {
 **/
 
 .cart-item {
-  border: 2px solid #212529;
-  border-radius: 5px;
   display: flex;
-  padding: 1rem;
+  align-items: center;
+  vertical-align: middle;
+  border-bottom: 2px solid #212529;
+  padding-bottom: 2rem;
 }
 
-.cart-item img{
-  padding-right: 1rem;
+.cart-item:last-of-type{
+  border: none;
+
+}
+
+.cart-item img {
+  width: 50%;
 }
 
 .title-price-x {
   width: 195px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  /* border: 2px solid red; */
 }
 
 .title-price {
   display: flex;
   align-items: center;
+  vertical-align: middle;
   gap: 10px;
 }
 
@@ -139,4 +172,30 @@ a {
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
+}
+
+.details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .cart-item {
+    flex-direction: column;
+  }
+
+  .details {
+    padding-top: 0.5rem;
+  }
 }
