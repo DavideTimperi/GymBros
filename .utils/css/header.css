@@ -190,7 +190,7 @@ li{
         position: absolute;
         left: 0;
         right: 0;
-        top: -500%;
+        top: -1000%;
         transition: 0.5s;
         background-color: var(--footerBg-color);
         border-radius: 4px;
