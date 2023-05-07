@@ -176,11 +176,70 @@ li{
 
 
 
+/* -----------------------------------     shop header      --------------------------------------------- */
+
+/**
+* ! Navbar STyles are here
+**/
+
+.navbar {
+    height: 3.5rem;  /**/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    /* padding: 25px 60px; */
+    padding: 0 1rem;
+    /* margin-bottom: 30px; */
+    align-items: center;
+}
+  
+.navbar h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+
+.cart {
+    position: relative;
+    color: #fff;
+    /* font-size: 30px; */
+    font-size: 1rem;
+    padding: 5px;
+    /* padding: 0 1rem; */
+    border-radius: 4px;
+
+}
+  
+.cartAmount {
+    position: absolute;
+    /* margin-top: 1rem; */
+    top: -10px;
+    right: -10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
 
 
 
 
-@media(max-width:768px){
+
+
+
+
+
+
+
+@media(max-width:900px){
     .headerWraper .menu{
         display: block;
         color: white;
@@ -208,4 +267,9 @@ li{
     .headerWraper{
         background-color: #202329;      /* leggermente sfocato da var(--footerBg-color) */
     }
+
+    .headerWraper .nav li i{
+        margin-left: -2rem;
+    }
+
 }
