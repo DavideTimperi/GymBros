@@ -73,6 +73,7 @@ header .headerWraper{
 
 .headerWraper .nav{
     display: flex;
+    align-items: center;  /**/
 }
 
 
@@ -84,10 +85,22 @@ header .headerWraper{
     color: white;
 }
 
-.headerWraper .nav i{
+/*  fix the profile icon in staff.html */
+ .headerWraper .nav i{
     color: white;
     padding-left: 2rem;
 }
+/* ---------------------------------- */
+
+/*  fix the profile icon in home.html */
+.headerWraper .login-icon{
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding-left: 2rem;
+}
+/* ---------------------------------- */
 
 li{
     list-style: none;
@@ -178,30 +191,6 @@ li{
 
 /* -----------------------------------     shop header      --------------------------------------------- */
 
-/**
-* ! Navbar STyles are here
-**/
-
-.navbar {
-    height: 3.5rem;  /**/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #212529;
-    color: white;
-    /* padding: 25px 60px; */
-    padding: 0 1rem;
-    /* margin-bottom: 30px; */
-    align-items: center;
-}
-  
-.navbar h2{
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--main-color);
-}
-
-
 .cart {
     position: relative;
     color: #fff;
@@ -216,9 +205,9 @@ li{
 .cartAmount {
     position: absolute;
     /* margin-top: 1rem; */
-    top: -10px;
+    top: 1px;
     right: -10px;
-    font-size: 14px;
+    font-size: 10px;
     background-color: red;
     color: white;
     padding: 2px;
@@ -244,6 +233,7 @@ li{
         display: block;
         color: white;
     }
+
     .headerWraper .nav{
         display: block;
         position: absolute;
@@ -254,11 +244,20 @@ li{
         background-color: var(--footerBg-color);
         border-radius: 4px;
     }
+
+    .headerWraper .nav a{
+        text-align: center;
+        display: block;
+        padding: .3rem 0rem;
+        color: white;
+        margin-left: 0;
+    }
+
     .headerWraper .nav li a{
         text-align: center;
         display: block;
         padding: .3rem 0rem;
-        color: black;
+        color: white;
         margin-left: 0;
     }
     .nav.active{
