@@ -47,13 +47,13 @@ session_start();
 <header class="scroll">
   <nav class="headerWraper layout">
       <div class="logo">
-          <a href="home.html"> <b>Gymbros</b> </a>
+          <a href="../html/home.html"> <b>Gymbros</b> </a>
       </div>
       <div>
           <ul class="nav">
-              <li><a href="home.html" class="nav-link">Home</a></li>
-              <li><a href="shop.html" class="nav-link link-active">Shop</a></li>
-              <li><a href="staff.html" class="nav-link">Staff</a></li>
+              <li><a href="../html/home.html" class="nav-link">Home</a></li>
+              <li><a href="shop.php" class="nav-link link-active">Shop</a></li>
+              <li><a href="../html/staff.html" class="nav-link">Staff</a></li>
               <li><a href="../php/login_form.php"><i class="fa-solid fa-user nav-link"></i></a></li>
               <a href="../html/cart.html">
                 <div class="cart">
