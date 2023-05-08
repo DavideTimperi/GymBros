@@ -11,7 +11,7 @@ function myFunction() {
    y.type="text";
   }
   else{
-   y.type="text";
+   y.type="password";
   }
 }
 </script>
