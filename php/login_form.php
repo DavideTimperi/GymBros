@@ -17,9 +17,10 @@ session_start();
 if(isset($_POST['submit']))
 {
 
-   
+   $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = md5($_POST['password']);
+   $cpass = md5($_POST['cpassword']);
   
    
 
@@ -29,9 +30,11 @@ if(isset($_POST['submit']))
 
    if(mysqli_num_rows($result) > 0){
 
-     
 
+     
+         $row=mysqli_fetch_array($result);
          $_SESSION['email']=$row['email'];
+         $_SESSION['name']=$row['name'];
           header('location:user_page.php');
 
       

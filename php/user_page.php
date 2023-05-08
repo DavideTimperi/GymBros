@@ -4,6 +4,9 @@
 
 session_start();
 
+if(!isset($_SESSION['email'])){
+   header('location:login_form.php');}
+
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +26,8 @@ session_start();
 <div class="container">
 
    <div class="content">
-      <h3>hi, <span></span></h3>
-     <h1>welcome<span><?php  echo  $_SESSION['email'] ?></h1>
+      <h3>hi,</h3>
+     <h1>welcome   <span>  <?php  echo  $_SESSION['name'] ?></h1>
       <p>this is an user page</p>
       <a href="../html/shop.html" class="btn">shop</a>
       <a href="register_form.php" class="btn">register</a>
