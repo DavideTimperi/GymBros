@@ -31,7 +31,7 @@ if(isset($_POST['submit']))
 
      
 
-         
+         $_SESSION['email']=$row['email'];
           header('location:user_page.php');
 
       
