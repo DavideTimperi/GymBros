@@ -38,21 +38,26 @@
 /* shop */
 .shop {
     display: grid;
-    grid-template-columns: repeat(4, 223px);
-    gap: 30px;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem 3rem;
     justify-content: center;
-    padding: 2rem;
+    padding: 6rem;
+    padding-top: 2rem !important;
 }
   
   @media (max-width: 1000px) {
     .shop {
-      grid-template-columns: repeat(2, 223px);
+      grid-template-columns: repeat(2, auto);
+      padding: 3rem;
+    }
+    #list {
+        font-size: 5vh;
     }
   }
   
   @media (max-width: 500px) {
     .shop {
-      grid-template-columns: repeat(1, 223px);
+      grid-template-columns: repeat(1, auto);
     }
   }
   
