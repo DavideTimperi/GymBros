@@ -10,28 +10,49 @@
 
   <link rel="stylesheet" href="../.utils/css/header.css">
   <link rel="stylesheet" href="../.utils/css/cart.css">
-   <link rel="stylesheet" href="../.utils/css/footer.css">
+  <link rel="stylesheet" href="../.utils/css/footer.css">
   <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon">
-
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
   
   <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="navbar">
-    <a href="../html/shop.html">
-      <h2>Clothing Store</h2>
-    </a>
+  
+  <header class="scroll" style="background-color:#292d36">
+    <nav class="headerWraper">
+        <div class="logo">
+            <a href="home.html"> <b>Gymbros</b> </a>
+        </div>
+        <div>
+            <ul class="nav">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link link-active">Shop</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+            </ul>
+        </div>
 
-    <a href="../html/cart.html">
-      <div class="cart">
-        <i class="fa-solid fa-shopping-cart"></i>
-        <div id="cartAmount" class="cartAmount">0</div>
-      </div>
-    </a>
+        <div>
 
-  </div>
+          <ul class="right">
+                <a href="../php/login_form.php" class="login-icon"><i class="fa-solid fa-user nav-link"></i></a>
+
+                <a href="../html/cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+
+                <div class="menu">
+                    <i class="bx bx-menu bx-md"></i>
+                </div>
+          </ul>
+
+        </div>
+    </nav>
+  </header>
 
   <div id="label" class="text-center"></div>
 
@@ -39,5 +60,5 @@
 </body>
 <script src="../js/Data.js"></script>
 <script src="../js/cart.js"></script>
-
+<script src="../js/main.js"></script>
 </html>

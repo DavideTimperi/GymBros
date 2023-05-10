@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../.utils/css/header.css">
   <link rel="stylesheet" href="../.utils/css/shop.css">
   <link rel="stylesheet" href="../.utils/css/footer.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
   <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon"> 
   
   <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
@@ -21,49 +21,39 @@
 
 <body>
 
-<!-- first header
-  <header>
-    <div class="navbar">
-      <a href="home.html">
-        <h2>Gymbros</h2>
-      </a>
-  
-      <a href="../html/cart.html">
-        <div class="cart">
-          <i class="fa-solid fa-shopping-cart"></i>
-          <div id="cartAmount" class="cartAmount">0</div>
+  <header class="scroll">
+    <nav class="headerWraper">
+        <div class="logo">
+            <a href="home.html"> <b>Gymbros</b> </a>
         </div>
-      </a>
-  
-    </div>
-  </header>
--->
+        <div>
+            <ul class="nav">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link link-active">Shop</a></li>
+                <li><a href="staff.html" class="nav-link">Staff</a></li>
+            </ul>
+        </div>
 
-<header class="scroll">
-  <nav class="headerWraper layout">
-      <div class="logo">
-          <a href="home.html"> <b>Gymbros</b> </a>
-      </div>
-      <div>
-          <ul class="nav">
-              <li><a href="home.html" class="nav-link">Home</a></li>
-              <li><a href="shop.html" class="nav-link link-active">Shop</a></li>
-              <li><a href="staff.html" class="nav-link">Staff</a></li>
-              <li><a href="../php/login_form.php"><i class="fa-solid fa-user nav-link"></i></a></li>
-              <a href="../html/cart.html">
-                <div class="cart">
-                  <i class="fa-solid fa-shopping-cart"></i>
-                  <div id="cartAmount" class="cartAmount">0</div>
+        <div>
+
+          <ul class="right">
+                <a href="../php/login_form.php" class="login-icon"><i class="fa-solid fa-user nav-link"></i></a>
+
+                <a href="../html/cart.html">
+                    <div class="cart">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+
+                <div class="menu">
+                    <i class="bx bx-menu bx-md"></i>
                 </div>
-              </a>
           </ul>
-      </div>
 
-      <div class="menu">
-          <i class="bx bx-menu bx-md"></i>
-      </div>
-  </nav>
-</header>
+        </div>
+    </nav>
+  </header>
 
 
   <div class="title-shop">

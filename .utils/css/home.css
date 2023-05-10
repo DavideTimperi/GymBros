@@ -22,7 +22,7 @@
 .home .content .title{
     font-size: 3rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase;      /* togli se non vuoi il titolo maiuscolo */
     margin-bottom: var(--mb-2);
 }
 
@@ -34,7 +34,7 @@
 
 .home .content .description{
     margin-bottom: var(--mb-2);
-    margin-top: -6rem;
+    /* margin-top: -6rem; */    /* serviva per quando c'era il logo */
 }
 
 .home .content .btn{

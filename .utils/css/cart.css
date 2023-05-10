@@ -43,42 +43,10 @@ a {
   transition: 1s;
 }
 
-/**
-* ! Navbar STyles are here
-**/
-
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #212529;
-  color: white;
-  padding: 25px 60px;
-  margin-bottom: 30px;
-}
-
-.cart {
-  position: relative;
-  color: #fff;
-  font-size: 30px;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-.cartAmount {
-  position: absolute;
-  top: -15px;
-  right: -10px;
-  font-size: 16px;
-  background-color: red;
-  color: white;
-  padding: 3px;
-  border-radius: 3px;
-}
-
 /* stuffs */
 
 .text-center {
+  margin-top: 3rem;
   text-align: center;
   margin-bottom: 20px;
 }

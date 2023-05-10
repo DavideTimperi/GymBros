@@ -28,7 +28,7 @@
         <!-- Header -->
 
         <header class="scroll">
-            <nav class="headerWraper layout">
+            <nav class="headerWraper">  <!-- layout -->
                 <div class="logo">
                     <a href="home.html"> <b>Gymbros</b> </a>
                 </div>
@@ -39,30 +39,29 @@
                         <li><a href="#courses" class="nav-link">Courses</a></li>
                         <li><a href="#schedules" class="nav-link">Schedules</a></li>
                         <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                        <li><a href="#contact" class="nav-link">Contacts</a></li>
                         <li><a href="shop.html" class="nav-link">Shop</a></li>
                         <li><a href="staff.html" class="nav-link">Staff</a></li>
-                        <li><a href="#contact" class="nav-link">Contacts</a></li>
                     </ul>
                 </div>
 
-                <!--<div class="nav">
+                <div>
 
-                   
+                   <ul class="right">
+                        <a href="../php/login_form.php" class="login-icon"><i class="fa-solid fa-user nav-link"></i></a>
 
-                </div>-->
-                <a href="../php/login_form.php" class="login-icon"><i class="fa-solid fa-user nav-link"></i></a>
+                        <a href="../html/cart.html">
+                            <div class="cart">
+                                <i class="fa-solid fa-shopping-cart"></i>
+                                <div id="cartAmount" class="cartAmount">0</div>
+                            </div>
+                        </a>
 
-                <a href="../html/cart.html">
-                    <div class="cart">
-                        <i class="fa-solid fa-shopping-cart"></i>
-                        <div id="cartAmount" class="cartAmount">0</div>
-                    </div>
-                </a>
+                        <div class="menu">
+                            <i class="bx bx-menu bx-md"></i>
+                        </div>
+                   </ul>
 
-                
-
-                <div class="menu">
-                    <i class="bx bx-menu bx-md"></i>
                 </div>
             </nav>
         </header>
@@ -74,7 +73,8 @@
                 <div class="content">
                     <h1 class="title">
                         <span>
-                            <img src="../.utils/images/logo_v2 resized.png" alt="logo">
+                            <!--<img src="../.utils/images/logo_v2 resized.png" alt="logo">-->
+                            Gymbros
                         </span>
                     </h1>
                     <p class="description">Sed consequat, leo eget bibendum sodales, augue velit cursus nunc</p>

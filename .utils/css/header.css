@@ -28,9 +28,6 @@
     --section-color: #f9f9f9;
     
     --favorite-color: rgba(0, 0, 0, 0.3);
-        /*  */
-        /*  */
-        /*  */
 
 }
 
@@ -83,22 +80,38 @@ header .headerWraper{
     color: white;
 }
 
+.headerWraper .right{
+    display: flex;
+    align-items: center;  /**/
+}
+
+.headerWraper .right a{
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ------------------------------------------------ ultime verifiche poi cancello -------------------------------------------------- */
+
 /*  fix the profile icon in staff.html */
- .headerWraper .nav i{
+ /*.headerWraper .nav i{
     color: white;
     padding-left: 2rem;
-}
+} */
 /* ---------------------------------- */
 
 /*  fix the profile icon in home.html */
-.headerWraper .login-icon{
+/* .headerWraper .login-icon{
     margin-left: 2rem;
     font-size: 1rem;
     font-weight: 500;
     color: white;
     padding-left: 2rem;
-}
+} */
 /* ---------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
 
 li{
     list-style: none;
@@ -150,7 +163,9 @@ li{
 }
 
 
-/* -----------------------------------     shop header      --------------------------------------------- */
+
+
+/* -----------------------------------     cart icon style      --------------------------------------------- */
 
 .cart {
     position: relative;
@@ -165,9 +180,8 @@ li{
   
 .cartAmount {
     position: absolute;
-    /* margin-top: 1rem; */
     top: 1px;
-    right: -10px;
+    right: -7px;
     font-size: 10px;
     background-color: red;
     color: white;
@@ -189,10 +203,11 @@ li{
 
 
 
-@media(max-width:900px){
+@media(max-width:780px){
     .headerWraper .menu{
         display: block;
         color: white;
+        padding-left: 1rem;
     }
 
     .headerWraper .nav{
