@@ -5,7 +5,34 @@ session_start();
 
 if(isset($_POST['submit'])){
 
+    $name_on_card=mysqli_real_escape_string($conn,$_POST['card-name']);
+    $card_number=mysqli_real_escape_string($conn,$_POST['card-number']);
+    $cvv=mysqli_real_escape_string($conn,$_POST['card-cvv']);
     
+    
+    $bill_full_name=mysqli_real_escape_string($conn,$_POST['billing-name']);
+    $bill_email=mysqli_real_escape_string($conn,$_POST['billing-email']);
+    $bill_address=mysqli_real_escape_string($conn,$_POST['billing-addr']);
+    $bill_city=mysqli_real_escape_string($conn,$_POST['billing-city']);
+    $bill_state=mysqli_real_escape_string($conn,$_POST['billing-state']);
+    $bill_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
+
+
+
+    $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
+    $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
+    $ship_address=mysqli_real_escape_string($conn,$_POST['shipping-addr']);
+    $ship_city=mysqli_real_escape_string($conn,$_POST['shipping-city']);
+    $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
+    $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
+    
+    $email_login=mysqli_real_escape_string($conn,$_POST['shipping-name']);
+    $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
+
+
+   $INSERT="INSERT INTO orderform(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'  $card_number','  ', '   ', )"; 
+
+
 };
 
 ?>
@@ -39,7 +66,7 @@ if(isset($_POST['submit'])){
 
 
 
-                <input id="cart_hidden" type="text">
+                <input id="cart_hidden" type="text" name="cart_hidden">
 
 
 
@@ -70,19 +97,19 @@ if(isset($_POST['submit'])){
                     <label><i class="fa-solid fa-road"></i> Address*: <input type="text" name="billing-addr" value="" placeholder="Via del corso 31"></label>
                     <label><i class="fa-solid fa-building"></i> City*: <input type="text" name="billing-city" value="" placeholder="Rome"></label>
                     <label><i class="fa-solid fa-flag"></i> State*: <input type="text" name="billing-state" value="" placeholder="Italy"></label>
-                    <label><i class="fa-solid fa-truck-front"></i> Postal code*: <input type="text" name="card-cvv" value="" placeholder="00012" maxlength="5" minlength="5"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code*: <input type="text" name="billing-postal-code" value="" placeholder="00012" maxlength="5" minlength="5"></label>
                     <label><input id="hide-check" type="checkbox" class="inline" checked>Shipping address is the same as billing one</label>
                 </fieldset>
                 
                 <fieldset id="shipping">
                     <h3>Shipping address</h3>
                     <p><b>NOTE:</b> fill all fields or we will consider the shipping address the same as billing one</p>
-                    <label><i class="fa-solid fa-id-card"></i> Full name: <input type="text" placeholder="Jhon M. Doe"></label>
-                    <label><i class="fa-solid fa-envelope"></i> Email: <input type="email" placeholder="jhon@example.com" pattern="[a-zA-Z]+\@[a-zA-Z]+\.[a-zA-Z]+"></label>
-                    <label><i class="fa-solid fa-road"></i> Address: <input type="text" placeholder="Via del corso 20"></label>
-                    <label><i class="fa-solid fa-building"></i> City: <input type="text" placeholder="Rome"></label>
-                    <label><i class="fa-solid fa-flag"></i> State: <input type="text" placeholder="Italy"></label>
-                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" placeholder="00112"></label>
+                    <label><i class="fa-solid fa-id-card"></i> Full name: <input type="text" name="shipping-name" placeholder="Jhon M. Doe"></label>
+                    <label><i class="fa-solid fa-envelope"></i> Email: <input type="email" name="shipping-email" placeholder="jhon@example.com" pattern="[a-zA-Z]+\@[a-zA-Z]+\.[a-zA-Z]+"></label>
+                    <label><i class="fa-solid fa-road"></i> Address: <input type="text" name="shipping-addr" placeholder="Via del corso 20"></label>
+                    <label><i class="fa-solid fa-building"></i> City: <input type="text" name="shipping-city" placeholder="Rome"></label>
+                    <label><i class="fa-solid fa-flag"></i> State: <input type="text" name="shipping-state" placeholder="Italy"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" name="shipping-postalcode" placeholder="00112"></label>
                 </fieldset>
 
                 <input type="submit" name="submit" value="PAY NOW" class="redirect-button">
