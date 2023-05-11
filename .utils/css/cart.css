@@ -1,26 +1,3 @@
-/**
-* ! Changing default styles of the browser
-**/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-i {
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 /* fa styiling */
 .fa .fa-circle-x .fa-minus .fa-plus {
   cursor: pointer;
@@ -43,12 +20,17 @@ a {
   transition: 1s;
 }
 
-/* stuffs */
-
+/* stuffs and buttons*/
 .text-center {
   margin-top: 3rem;
   text-align: center;
   margin-bottom: 20px;
+}
+
+#label {
+  display: block;
+  margin: 0 auto;
+  padding-top: 6rem;
 }
 
 .HomeBtn,
@@ -88,22 +70,15 @@ a {
   transition: 1s;
 }
 
-
-
-
 /* cart */
-
 .shopping-cart {
   display: grid;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: auto;
   margin: 0 auto;
   justify-content: center;
   gap: 3rem;
+  padding: 0rem 2rem;
 }
-
-/**
-* ! style rules for cart-item
-**/
 
 .cart-item {
   display: flex;
@@ -123,7 +98,7 @@ a {
 }
 
 .title-price-x {
-  width: 195px;
+  width: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -146,8 +121,10 @@ a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 0 auto;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  padding: 0rem 4rem;
 }
 
 .buttons {
