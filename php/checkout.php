@@ -1,6 +1,6 @@
 <?php
 
-@include 'confing.php';
+@include 'confing_order.php';
 session_start();
 
 if(isset($_POST['submit'])){
@@ -26,12 +26,15 @@ if(isset($_POST['submit'])){
     $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
     $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
     
+
+    //AGGIUNGI L'EMAIL DALLA SESSION
     $email_login=mysqli_real_escape_string($conn,$_POST['shipping-name']);
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
 
-   $INSERT="INSERT INTO orderform(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'  $card_number','  ', '   ', )"; 
-
+   $INSERT="INSERT INTO orderform(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'  $card_number',' $cvv  ', '  $bill_full_name  ','  $bill_email','$bill_address', '$bill_city', ' $bill_state', ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_clien' )"; 
+    mysqli_query($conn, $insert);
+    header('location:user_page.php');
 
 };
 
