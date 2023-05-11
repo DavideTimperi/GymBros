@@ -32,9 +32,9 @@ if(isset($_POST['submit'])){
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
 
-   $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_clien' )"; 
+   $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_client' )"; 
     mysqli_query($conn, $insert);
-    header('location:user_page.php');
+    header('location:user_page.php'); //MESSO LA USER PAGE PER VEDERE SE FUONZIONA MA VA MESSA LA PAGINA DEI RINGRAZIAMENTI
 
 };
 
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
 
         <!-- Checkout -->
         <!-- CHE ME DA ERRORE STA PROVA, POI BISOGNA LEVARLA-->
-            <!--<form id="checkout" method="post" action="../php/prova_decode.php">--> 
+            <form id="checkout" method="post" action="">
                 <!--cart-summary -->
 
 
