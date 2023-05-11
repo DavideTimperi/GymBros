@@ -1,7 +1,7 @@
 /*
 Show/Hide all the shipping part of the checkout
 */
-var profile_viewer_uid = localStorage.data;
+var profile_viewer_uid = [...localStorage.data];
 console.log(profile_viewer_uid)
 
 let reset = () => {
