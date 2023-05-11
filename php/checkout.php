@@ -1,7 +1,7 @@
 <?php
 
 @include 'confing_order.php';
-session_start();
+//session_start();
 
 if(isset($_POST['submit'])){
 
@@ -64,7 +64,8 @@ if(isset($_POST['submit'])){
         <!-- Header -->
 
         <!-- Checkout -->
-            <form id="checkout" method="post" action="../php/prova_decode.php">
+        <!-- CHE ME DA ERRORE STA PROVA, POI BISOGNA LEVARLA
+            <!--<form id="checkout" method="post" action="../php/prova_decode.php">--> 
                 <!--cart-summary -->
 
 
