@@ -1,8 +1,9 @@
 /*
 Show/Hide all the shipping part of the checkout
 */
-var profile_viewer_uid = [...localStorage.data];
-console.log(profile_viewer_uid)
+var profile_viewer_uid = localStorage.data;
+console.log(profile_viewer_uid);
+document.getElementById('cart_hidden').value = profile_viewer_uid;
 
 let reset = () => {
   $('#hide-check').change(function(){
@@ -15,13 +16,7 @@ let reset = () => {
   });
 
   $('.redirect-button').click(() => {
-
-    $.ajax({
-      url: "../php/prova_decode.php",
-      type: "POST",
-      data: profile_viewer_uid
-    })
-    setTimeout(localStorage.clear(), 5000);
+    localStorage.clear()
   });
 };
 
