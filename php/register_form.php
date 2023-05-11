@@ -21,7 +21,7 @@ function myFunction() {
 @include 'config.php';
 
 if(isset($_POST['submit'])){
-
+   echo $_POST['name'];
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = md5($_POST['password']);
