@@ -37,7 +37,7 @@ let generateCartItems = () => {
             
               <div class="title-price-x">
                 <h4 class="title-price">
-                  <p>${name}</p>
+                  <h3>${name}</h3>
                 </h4>
                 <i onclick="removeItem(${id})" class="fa-solid fa-circle-xmark"></i>
               </div>
