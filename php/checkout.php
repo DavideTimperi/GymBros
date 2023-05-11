@@ -22,9 +22,12 @@
         <!-- Header -->
 
         <!-- Checkout -->
-        <main>
-            <!--<form id="checkout">-->
+            <form id="checkout" method="post" action="../php/prova_decode.php">
                 <!--cart-summary -->
+
+
+                
+                <input id="cart_hidden" type="text">
                 <!-- payment method-->
                 <fieldset>
                     <h3>Payment</h3>
