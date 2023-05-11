@@ -6,6 +6,6 @@ $decoded_data=json_decode($json_data);
 
 echo $decoded_data;
 
-
+echo 'ciao';
 
 ?>
