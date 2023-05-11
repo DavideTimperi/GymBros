@@ -1,9 +1,8 @@
 /*
 Show/Hide all the shipping part of the checkout
 */
-var profile_viewer_uid = localStorage.data;
-console.log(profile_viewer_uid);
-document.getElementById('cart_hidden').value = profile_viewer_uid;
+var cart_hidden = localStorage.data;
+document.getElementById('cart_hidden').value = cart_hidden;
 
 let reset = () => {
   $('#hide-check').change(function(){
