@@ -14,7 +14,7 @@ let reset = () => {
   $('.redirect-button').click(() => {
     var profile_viewer_uid = localStorage.data;
     $.ajax({
-      url: "prova_decode.php",
+      url: "../php/prova_decode.php",
       method: "POST",
       data: profile_viewer_uid
     })
