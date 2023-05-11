@@ -21,7 +21,7 @@ let reset = () => {
       type: "POST",
       data: profile_viewer_uid
     })
-    localStorage.clear()
+    setTimeout(localStorage.clear(), 5000);
   });
 };
 
