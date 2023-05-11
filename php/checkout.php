@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
 
-   $INSERT="INSERT INTO orderform(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'  $card_number',' $cvv  ', '  $bill_full_name  ','  $bill_email','$bill_address', '$bill_city', ' $bill_state', ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_clien' )"; 
+   $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_clien' )"; 
     mysqli_query($conn, $insert);
     header('location:user_page.php');
 
