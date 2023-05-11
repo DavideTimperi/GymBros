@@ -1,6 +1,6 @@
 <?php
 
-$json_data=file_get_contents('../js/cart.js');
+$json_data=file_get_contents('../js/checkout.js');
 
 $decoded_data=json_decode($json_data);
 
