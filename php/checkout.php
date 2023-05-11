@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
     $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
     
 
-    //AGGIUNGI L'EMAIL DALLA SESSION
+   
     $email_login=mysqli_real_escape_string($conn,$_SESSION['email']);
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
@@ -120,7 +120,7 @@ if(isset($_POST['submit'])){
                     <label><i class="fa-solid fa-road"></i> Address: <input type="text" name="shipping-addr" placeholder="Via del corso 20"></label>
                     <label><i class="fa-solid fa-building"></i> City: <input type="text" name="shipping-city" placeholder="Rome"></label>
                     <label><i class="fa-solid fa-flag"></i> State: <input type="text" name="shipping-state" placeholder="Italy"></label>
-                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" name="shipping-postalcode" placeholder="00112"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" name="shipping-postalcode" value="" placeholder="00112" maxlength="5" minlength="5" ></label>
                 </fieldset>
 
                 <input type="submit" name="submit" value="PAY NOW" class="redirect-button">
