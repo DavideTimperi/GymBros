@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -26,8 +30,11 @@
                 <!--cart-summary -->
 
 
-                
+
                 <input id="cart_hidden" type="text">
+
+
+
                 <!-- payment method-->
                 <fieldset>
                     <h3>Payment</h3>
