@@ -1,5 +1,13 @@
 <?php
 
+@include 'confing.php';
+session_start();
+
+if(isset($_POST['submit'])){
+
+    
+};
+
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +85,7 @@
                     <label><i class="fa-solid fa-truck-front"></i> Postal code: <input type="text" placeholder="00112"></label>
                 </fieldset>
 
-                <a href="thank_you.html"><button class="redirect-button">Pay now</button></a>
+                <input type="submit" name="submit" value="PAY NOW" class="redirect-button">
             </form>
             <div id="back-to-home">
                 <label><a href="home.html"><i class="fa-solid fa-arrow-left"></i> Return to home</a></label>
