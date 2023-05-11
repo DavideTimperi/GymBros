@@ -1,6 +1,9 @@
 /*
 Show/Hide all the shipping part of the checkout
 */
+var profile_viewer_uid = localStorage.data;
+console.log(profile_viewer_uid)
+
 let reset = () => {
   $('#hide-check').change(function(){
     if(this.checked) {       
@@ -12,10 +15,10 @@ let reset = () => {
   });
 
   $('.redirect-button').click(() => {
-    var profile_viewer_uid = localStorage.data;
+
     $.ajax({
       url: "../php/prova_decode.php",
-      method: "POST",
+      type: "POST",
       data: profile_viewer_uid
     })
     localStorage.clear()
