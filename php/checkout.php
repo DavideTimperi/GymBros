@@ -1,7 +1,14 @@
 <?php
 
 @include 'confing_order.php';
-//session_start();
+session_start();
+
+//cotrollo se sei loggato
+if(!isset($_SESSION['email'])){
+    header('location:login_form.php');}
+
+    
+
 
 if(isset($_POST['submit'])){
 
@@ -28,7 +35,7 @@ if(isset($_POST['submit'])){
     
 
     //AGGIUNGI L'EMAIL DALLA SESSION
-    $email_login=mysqli_real_escape_string($conn,$_POST['shipping-name']);
+    $email_login=mysqli_real_escape_string($conn,$_SESSION['email']);
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
 
