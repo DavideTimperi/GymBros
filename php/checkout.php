@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
         <!-- Header -->
 
         <!-- Checkout -->
-        <!-- CHE ME DA ERRORE STA PROVA, POI BISOGNA LEVARLA
+        <!-- CHE ME DA ERRORE STA PROVA, POI BISOGNA LEVARLA-->
             <!--<form id="checkout" method="post" action="../php/prova_decode.php">--> 
                 <!--cart-summary -->
 
@@ -119,7 +119,7 @@ if(isset($_POST['submit'])){
                 <input type="submit" name="submit" value="PAY NOW" class="redirect-button">
             </form>
             <div id="back-to-home">
-                <label><a href="home.html"><i class="fa-solid fa-arrow-left"></i> Return to home</a></label>
+                <label><a href="../html/home.html"><i class="fa-solid fa-arrow-left"></i> Return to home</a></label>
             </div>
         </main>
 
