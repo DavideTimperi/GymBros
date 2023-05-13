@@ -1,5 +1,8 @@
 function generateHeader() {
     document.getElementById("header").innerHTML = `
+    <a href="#" class="scroll-up">
+        <i class="bx bx-chevron-up bx-sm"></i>
+    </a>
     <nav class="headerWraper">
     <div class="logo">
         <a href="home.html"> <b>Gymbros</b> </a>
