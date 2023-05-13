@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif; 
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #292d36;
+}
+
+.section-title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.carousels{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:5rem;
+    align-items: center;
+}
+
+.carousels .carousel-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 6px;
+    gap: 1rem;
+}
+
+.carousels .carousel-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 6px;
+    gap: 1rem;
+    
+}
+
+.carousels .carousel-left .billboard, .carousels .carousel-right .billboard{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.gallery, .gallery2, .gallery3{
+    display: flex;
+}
+
+ 
+.img img, .img2 img, .img3 img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img, .img2, .img3{
+    /* display: none; */
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousels .carousel-left .content, .carousels .carousel-right .content{
+    flex: 1 1 20rem;
+    text-align: justify;
+}
+
+.carousels .carousel-left .content h3, .carousels .carousel-right .content h3{
+    margin-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase; 
+}
+
+.carousels .carousel-left .content p, .carousels .carousel-right .content p{
+    color: #858686;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+@media(max-width: 900px){
+
+    .carousels .carousel-left,  .carousels .carousel-right{
+        flex-direction: column;
+    }
+}
