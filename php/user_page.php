@@ -31,7 +31,7 @@ if(!isset($_SESSION['email'])){
       <h3>hi,</h3>
      <h1>welcome   <span>  <?php  echo  $_SESSION['name'] ?></h1>
       <p>this is an user page</p>
-      <a href="shop_index.php" class="btn">shop</a>
+      <a href="../html/shop.html" class="btn">shop</a>
       <a href="register_form.php" class="btn">register</a>
       <a href="logout.php" class="btn">logout</a>
    </div>
