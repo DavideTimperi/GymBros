@@ -70,3 +70,8 @@ openMenu.addEventListener("click", function(){
 hideMenuIcon.addEventListener("click", function(){
     sideMenu.classList.remove("active");
 })
+
+/* footer */
+function messageAlert(msg) {
+    alert(String(msg));
+}
