@@ -14,6 +14,8 @@ if(!isset($_SESSION['email'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +23,11 @@ if(!isset($_SESSION['email'])){
 
    
    <link rel="stylesheet" href="../.utils/css/login.css">
+
+
+   <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+
+ 
 
 </head>
 <body>
@@ -33,10 +40,15 @@ if(!isset($_SESSION['email'])){
       <p>this is an user page</p>
       <a href="../html/shop.html" class="btn">shop</a>
       <a href="register_form.php" class="btn">register</a>
-      <a href="logout.php" class="btn">logout</a>
+      <a href="logout.php" class="btn redirect-button" >logout</a>
    </div>
 
 </div>
+<script>
+      $('.redirect-button').click(() => {
+         localStorage.clear()
+      });
+   </script>
 
 </body>
 </html>
