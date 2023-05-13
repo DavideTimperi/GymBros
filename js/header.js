@@ -17,8 +17,8 @@ function generateHeader() {
       <ul class="right">
             <a href="../php/user_page.php" class="login-icon"><i class="fa-solid fa-user nav-link"></i></a>
 
-            <a href="../html/cart.html">
-                <div class="cart">
+            <a href="../html/cart.html" class="nav-link">
+                <div class="cart nav-link">
                     <i class="fa-solid fa-shopping-cart"></i>
                     <div id="cartAmount" class="cartAmount">0</div>
                 </div>
