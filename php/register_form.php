@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
       <p>already have an account? <a href="login_form.php">login now</a></p>
-      <a href="../html/home.html"><p>Return home</p></a>
+      <p><a href="../html/home.html">Return home</a></p>
    </form>
 
 </div>
