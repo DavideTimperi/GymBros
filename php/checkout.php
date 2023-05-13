@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
 
    $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_client' )"; 
     mysqli_query($conn, $insert);
-    header('location:user_page.php'); //MESSO LA USER PAGE PER VEDERE SE FUONZIONA MA VA MESSA LA PAGINA DEI RINGRAZIAMENTI
+    header('location:../html/thank_you.html'); 
 
 };
 
@@ -71,7 +71,7 @@ if(isset($_POST['submit'])){
         <!-- Header -->
 
         <!-- Checkout -->
-        <!-- CHE ME DA ERRORE STA PROVA, POI BISOGNA LEVARLA-->
+       
             <form id="checkout" method="post" action="">
                 <!--cart-summary -->
 
@@ -96,7 +96,7 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <label><i class="fa-solid fa-user"></i> Name on card*: <input type="text" name="card-name" value="" placeholder="Jhon Doe"></label>
-                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" name="card-number" value="" placeholder="1111 2222 3333 4444" pattern="[0-9\s]{13,19}"></label>
+                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" name="card-number" value="" placeholder="1111-2222-3333-4444"></label>
                     <label><i class="fa-solid fa-calendar-days"></i> Expiration date*: <input type="month" name="card-exp" value="2023-05" min="2023-05" ></label>
                     <label><i class="fa-solid fa-credit-card"></i> CVV*: <input type="text" name="card-cvv" value="" placeholder="123" maxlength="3" minlength="3"></label>
                 </fieldset>
