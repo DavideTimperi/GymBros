@@ -29,7 +29,7 @@ if(!isset($_SESSION['email'])){
 </head>
 <body>
    
-<div class="container-sm">
+<div class="container">
 
    <div class="content">
       <h3>hi,</h3>
