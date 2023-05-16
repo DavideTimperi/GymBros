@@ -36,7 +36,7 @@ if(!isset($_SESSION['email'])){
 
    <div class="content">
       <h3>hi,</h3>
-     <h1>welcome   <span>  <?php  echo  $_SESSION['name'] ?></h1>
+     <h1>welcome   <span>  <?php  echo  $_SESSION['name'] ?></span></h1>
       <p>this is an user page</p>
       <a href="../html/shop.html" class="btn">shop</a>
       <a href="register_form.php" class="btn">register</a>
