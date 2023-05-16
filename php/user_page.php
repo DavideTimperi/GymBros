@@ -54,23 +54,17 @@ if(!isset($_SESSION['email'])){
 <div class="container text-center">
   <div class="row">
     <div class="col">
+
          <!--prima card-->
-         <div class="card" style="width: 18rem;">
+         <a href="../html/shop.html" class="btn btn-light"><div class="card" style="width: 18rem;">
             <img src="../.utils/images/shop.png" class="card-img-top" alt="shop">
             <div class="card-body">
                <h5 class="card-title">SHOP</h5>
                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-               <a href="#" class="card-link">Card link</a>
-               <a href="#" class="card-link">Another link</a>
-            </div>
-         </div>
+            
+            
+         </div></a>
       </div>
 
 
@@ -78,18 +72,15 @@ if(!isset($_SESSION['email'])){
    <div class="col">
       <!--seconda card-->
 
-      <div class="card" style="width: 18rem;">
+      <a href="checkout.php" class="btn btn-light"><div class="card" style="width: 18rem;">
   <img src="../.utils/images/payment.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CHECKOUT</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
  
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
+  
+</div></a>
     </div>
 
 
@@ -97,21 +88,14 @@ if(!isset($_SESSION['email'])){
 
     <div class="col">
       <!--terza card-->
-      <div class="card" style="width: 18rem;">
+      <a href="logout.php" class="btn btn-light" ><div class="card" style="width: 18rem;">
   <img src="../.utils/images/logout.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">LOGOUT</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
   
-      <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-      </div>
    </div>
-    
-   </div>
-  </div>
+  </div></a>
 </div>
 
 
