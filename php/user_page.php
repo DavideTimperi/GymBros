@@ -27,17 +27,15 @@ if(!isset($_SESSION['email'])){
 
  
 </head>
-<body>
-   
-<div class="container">
+<body >
 
-   <div class="content">
-      <h3>hi,</h3>
-     <h1>welcome   <span>  <?php  echo  $_SESSION['name'] ?></span></h1>
-      <p>this is an user page</p>
-      <a href="../html/shop.html" class="btn btn-dark">shop</a>
-      <a href="register_form.php" class="btn btn-dark">checkout</a>
-      <a href="logout.php" class="btn btn-dark" >logout</a>
+
+<div class="text-bg-dark p-3 container-fluid ">
+
+   <div class="text-bg-dark p-3 container-fluid container text-center ">
+      <h2>HI,</h2>
+     <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
+      
    </div>
 
 </div>
@@ -51,7 +49,7 @@ if(!isset($_SESSION['email'])){
 
 
 
-<div class="container text-center">
+<div class="container text-center" >
   <div class="row">
     <div class="col">
 
@@ -101,9 +99,9 @@ if(!isset($_SESSION['email'])){
 
 
 
-
-
-
+<div class="text-bg-dark p-3 container-fluid ">
+   <h3><span class="badge text-bg-danger">GYMBROS</span></h3>
+</div>
 
 
 
@@ -118,5 +116,9 @@ if(!isset($_SESSION['email'])){
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
+
+
 </body>
+
+
 </html>
