@@ -76,7 +76,6 @@
   grid-template-columns: auto;
   margin: 0 auto;
   justify-content: center;
-  gap: 3rem;
   padding: 0rem 2rem;
 }
 
@@ -85,7 +84,6 @@
   align-items: center;
   vertical-align: middle;
   border-bottom: 2px solid #212529;
-  padding-bottom: 2rem;
 }
 
 .cart-item:last-of-type{
@@ -94,8 +92,8 @@
 }
 
 .cart-item img {
-  width: 75%;
-  height: 75%;
+  width: 70%;
+  height: 70%;
 }
 
 .title-price-x {
