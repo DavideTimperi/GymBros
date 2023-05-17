@@ -171,7 +171,7 @@ li{
 
 /* ---------- scroll active link ---------- */
 
-.link-active,
+
 .nav-link:hover{
     color: var(--main-color) !important;  /* we need !important because we
      alredy assigned a color to .headerWraper .nav a */
