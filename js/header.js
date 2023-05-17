@@ -9,9 +9,9 @@ function generateHeader() {
     </div>
     <div>
         <ul class="nav">
-            <li><a href="home.html" class="nav-link">Home</a></li>
-            <li><a href="shop.html" class="nav-link link-active">Shop</a></li>
-            <li><a href="staff.html" class="nav-link">Staff</a></li>
+            <li><a href="../html/home.html" class="nav-link">Home</a></li>
+            <li><a href="../html/shop.html" class="nav-link link-active">Shop</a></li>
+            <li><a href="../html/staff.html" class="nav-link">Staff</a></li>
         </ul>
     </div>
 
