@@ -5,7 +5,7 @@ function generateHeader() {
     </a>
     <nav class="headerWraper">
     <div class="logo">
-        <a href="home.html"> <b>Gymbros</b> </a>
+        <a href="../html/home.html"> <b>Gymbros</b> </a>
     </div>
     <div>
         <ul class="nav">
