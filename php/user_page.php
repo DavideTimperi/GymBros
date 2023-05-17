@@ -28,19 +28,19 @@ if(!isset($_SESSION['email'])){
    <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
 </head>
-<body >
-<header class="scroll" id="header" style="background-color:#292d36 !important">
-  </header>
 
-<div class="text-bg-light p-3 container-fluid ">
+<body>
+   <header class="scroll" id="header" style="background-color:#292d36 !important">
+   </header>
 
-   <div class="text-bg-light p-3 container-fluid container text-center ">
+   <div class="text-bg-light p-3 container-fluid ">
+
+      <div class="text-bg-light p-3 container-fluid container text-center ">
       <h2>HI,</h2>
-     <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
-      
-   </div>
+      <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
+      </div>
 
-</div>
+   </div>
 
 
 
