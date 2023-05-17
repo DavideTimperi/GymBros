@@ -79,7 +79,7 @@ if(!isset($_SESSION['email'])){
       </div>
 
 
-      <!-- fare controllo per vedere se è vuoto--><input id="cart_hidden" type="text" name="cart_hidden">
+      <!-- fare controllo per vedere se è vuoto<input id="cart_hidden" type="text" name="cart_hidden">-->
 
    <div class="col">
       <!--seconda card-->
