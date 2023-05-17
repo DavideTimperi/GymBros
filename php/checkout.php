@@ -3,7 +3,7 @@
 @include 'confing_order.php';
 session_start();
 
-//cotrollo se sei loggato
+
 if(!isset($_SESSION['email'])){
     header('location:login_form.php');}
 
@@ -39,7 +39,8 @@ if(isset($_POST['submit'])){
     $order_client=mysqli_real_escape_string($conn,$_POST['cart_hidden']);
 
 
-   $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_client' )"; 
+   $insert="INSERT INTO order_form(name_on_card, card_number, cvv, bill_full_name, bill_email, bill_address, bill_city, bill_state, bill_postal_code, ship_full_name, ship_email, ship_address, ship_city, ship_state, ship_postal_code, email_login, order_client) 
+            VALUES('$name_on_card' ,'$card_number','$cvv', '$bill_full_name','$bill_email','$bill_address', '$bill_city', '$bill_state' , ' $bill_postal_code', ' $ship_full_name', ' $ship_email', ' $ship_address', ' $ship_city', ' $ship_state', '$ship_postal_code', ' $email_login', '$order_client' )"; 
     mysqli_query($conn, $insert);
     header('location:../html/thank_you.html'); 
 
