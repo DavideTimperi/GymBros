@@ -35,7 +35,7 @@ if(!isset($_SESSION['email'])){
 <!--<body background="../.utils/images/pale.png">-->
 
 <body style="
-background-image: url('../.utils/images/pale.png');
+background-image: url('../.utils/images/yoga.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -46,8 +46,8 @@ background-image: url('../.utils/images/pale.png');
    <div class=" p-3 container-fluid container text-center  ">
 
       <div class=" p-3 container-fluid container text-center ">
-      <h2>HI,</h2>
-      <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
+      <h2>HI, </h2>
+      <h1 >WELCOME <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
 
    </div>
 
@@ -70,7 +70,7 @@ background-image: url('../.utils/images/pale.png');
          <a href="../html/shop.html" class="btn "><div  style="width: 18rem;">
             <img src="../.utils/images/shop_bianco.png" class="card-img-top" alt="shop">
             <div class="card-body">
-               <h5 class="card-title">SHOP</h5>
+               <h5 class="card-title"><span class="badge text-bg-dark">SHOP</span></h5>
               
             </div>
             
@@ -84,9 +84,9 @@ background-image: url('../.utils/images/pale.png');
       <!--seconda card-->
 
       <a href="checkout.php" class="btn"><div  style="width: 18rem;">
-  <img src="../.utils/images/payment_bianco.png" class="card-img-top" alt="...">
+  <img src="../.utils/images/payment_grigio.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">CHECKOUT</h5>
+    <h5 class="card-title "><span class="badge text-bg-dark"> CHECKOUT</span></h5>
     
   </div>
  
@@ -103,7 +103,7 @@ background-image: url('../.utils/images/pale.png');
          <div class=" pippo" style="width: 18rem;">
             <img src="../.utils/images/logout_bianco.png" class="card-img-top" alt="...">
             <div class="card-body">
-               <h5 class="card-title">LOGOUT</h5>
+               <h5 class="card-title"><span class="badge text-bg-dark">LOGOUT</span></h5>
                
             </div>
          </div></a>
