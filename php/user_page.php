@@ -86,7 +86,7 @@ if(!isset($_SESSION['email'])){
 
     <div class="col">
       <!--terza card-->
-      <a href="logout.php" class="btn btn-light" ><div class="card" style="width: 18rem;">
+      <a href="logout.php" class="btn btn-light" ><div class="card pippo" style="width: 18rem;">
   <img src="../.utils/images/logout.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">LOGOUT</h5>
@@ -106,7 +106,7 @@ if(!isset($_SESSION['email'])){
 
 
 <script>
-      $('.redirect-button').click(() => {
+      $('.pippo').click(() => {
          localStorage.clear()
       });
    </script>
