@@ -68,7 +68,7 @@ background-image: url('../.utils/images/yoga.jpg');
 
          <!--prima card-->
          <a href="../html/shop.html" class="btn "><div  style="width: 18rem;">
-            <img src="../.utils/images/shop_bianco.png" class="card-img-top" alt="shop">
+            <img src="../.utils/images/shop_grigio.png" class="card-img-top" alt="shop">
             <div class="card-body">
                <h5 class="card-title"><span class="badge text-bg-dark">SHOP</span></h5>
               
@@ -101,7 +101,7 @@ background-image: url('../.utils/images/yoga.jpg');
       <!--terza card-->
       <a href="logout.php" class="btn  " >
          <div class=" pippo" style="width: 18rem;">
-            <img src="../.utils/images/logout_bianco.png" class="card-img-top" alt="...">
+            <img src="../.utils/images/logout_grigio.png" class="card-img-top" alt="...">
             <div class="card-body">
                <h5 class="card-title"><span class="badge text-bg-dark">LOGOUT</span></h5>
                
