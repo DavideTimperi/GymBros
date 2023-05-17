@@ -30,9 +30,9 @@ if(!isset($_SESSION['email'])){
 <body >
 
 
-<div class="text-bg-dark p-3 container-fluid ">
+<div class="text-bg-light p-3 container-fluid ">
 
-   <div class="text-bg-dark p-3 container-fluid container text-center ">
+   <div class="text-bg-light p-3 container-fluid container text-center ">
       <h2>HI,</h2>
      <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
       
