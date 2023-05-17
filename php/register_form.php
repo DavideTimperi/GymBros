@@ -28,22 +28,30 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    
 
-   $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+   $select = " SELECT * FROM user_form WHERE email = '$email'  ";
 
-   $result = mysqli_query($conn, $select);
+   
+   
+   $result=mysqli_query($conn, $select);
+   
 
-   if(mysqli_num_rows($result) > 0){
+   
 
-      $error[] = 'user already exist!';
+   if(mysqli_num_rows($result) > 0 ){
 
-   }else{
+      $error[] = 'email already used!';
+
+   }
+   
+   
+   else{
 
       if($pass != $cpass){
          $error[] = 'password not matched!';
       }else{
          $insert = "INSERT INTO user_form(name, email, password) VALUES('$name','$email','$pass')";
          mysqli_query($conn, $insert);
-         header('location:login_form.php');
+        header('location:login_form.php');
       }
    }
 
