@@ -21,26 +21,37 @@ if(!isset($_SESSION['email'])){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>user page</title>
 
-   
-   <!--<link rel="stylesheet" href="../.utils/css/login.css">-->
-   <link rel="stylesheet" href="../.utils/css/header.css">
+
+  
+   <link rel="stylesheet" href="../.utils/css/home.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
    <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
    <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
+
+   
+
 </head>
 
-<body>
-   <header class="scroll" id="header" style="background-color:#292d36 !important">
-   </header>
+<!--<body background="../.utils/images/pale.png">-->
 
-   <div class="text-bg-light p-3 container-fluid ">
+<body style="
+background-image: url('../.utils/images/pale.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7) !important; ">
+   
+   <div class=" p-3 container-fluid container text-center  ">
 
-      <div class="text-bg-light p-3 container-fluid container text-center ">
+      <div class=" p-3 container-fluid container text-center ">
       <h2>HI,</h2>
       <h1>WELCOME   <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
-      </div>
 
    </div>
+
+</div>
 
 
 
@@ -51,16 +62,16 @@ if(!isset($_SESSION['email'])){
 
 
 
-<div class="container text-center" >
+<div class="container text-center " >
   <div class="row">
     <div class="col">
 
          <!--prima card-->
-         <a href="../html/shop.html" class="btn btn-light"><div class="card" style="width: 18rem;">
-            <img src="../.utils/images/shop.png" class="card-img-top" alt="shop">
+         <a href="../html/shop.html" class="btn "><div  style="width: 18rem;">
+            <img src="../.utils/images/shop_bianco.png" class="card-img-top" alt="shop">
             <div class="card-body">
                <h5 class="card-title">SHOP</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
             </div>
             
             
@@ -72,11 +83,11 @@ if(!isset($_SESSION['email'])){
    <div class="col">
       <!--seconda card-->
 
-      <a href="checkout.php" class="btn btn-light"><div class="card" style="width: 18rem;">
-  <img src="../.utils/images/payment.png" class="card-img-top" alt="...">
+      <a href="checkout.php" class="btn"><div  style="width: 18rem;">
+  <img src="../.utils/images/payment_bianco.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">CHECKOUT</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
   </div>
  
   
@@ -88,12 +99,12 @@ if(!isset($_SESSION['email'])){
 
     <div class="col">
       <!--terza card-->
-      <a href="logout.php" class="btn btn-light" >
-         <div class="card pippo" style="width: 18rem;">
-            <img src="../.utils/images/logout.png" class="card-img-top" alt="...">
+      <a href="logout.php" class="btn  " >
+         <div class=" pippo" style="width: 18rem;">
+            <img src="../.utils/images/logout_bianco.png" class="card-img-top" alt="...">
             <div class="card-body">
                <h5 class="card-title">LOGOUT</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               
             </div>
          </div></a>
    </div>
@@ -103,8 +114,8 @@ if(!isset($_SESSION['email'])){
 
 
 
-
-
+<!--<img src="../.utils/images/yoga.jpg" class="img-fluid" alt="...">
+-->
   
   
 
@@ -120,8 +131,7 @@ if(!isset($_SESSION['email'])){
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-   
-<script src="../js/header.js"></script>
+
 
 
 
