@@ -24,15 +24,27 @@ if(isset($_POST['submit'])){
     $bill_state=mysqli_real_escape_string($conn,$_POST['billing-state']);
     $bill_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
 
-
-
     $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
-    $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
-    $ship_address=mysqli_real_escape_string($conn,$_POST['shipping-addr']);
-    $ship_city=mysqli_real_escape_string($conn,$_POST['shipping-city']);
-    $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
-    $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
-    
+
+
+    if($ship_full_name==''){
+        $ship_full_name=mysqli_real_escape_string($conn,$_POST['billing-name']);
+        $ship_email=mysqli_real_escape_string($conn,$_POST['billing-email']);
+        $ship_address=mysqli_real_escape_string($conn,$_POST['billing-addr']);
+        $ship_city=mysqli_real_escape_string($conn,$_POST['billing-city']);
+        $ship_state=mysqli_real_escape_string($conn,$_POST['billing-state']);
+        $ship_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
+
+    }
+
+    else{
+        $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
+        $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
+        $ship_address=mysqli_real_escape_string($conn,$_POST['shipping-addr']);
+        $ship_city=mysqli_real_escape_string($conn,$_POST['shipping-city']);
+        $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
+        $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
+    }
 
    
     $email_login=mysqli_real_escape_string($conn,$_SESSION['email']);
