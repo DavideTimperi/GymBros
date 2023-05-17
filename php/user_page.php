@@ -35,13 +35,13 @@ if(!isset($_SESSION['email'])){
 <!--<body background="../.utils/images/pale.png">-->
 
 <body style="
-background-image: url('../.utils/images/yoga.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.7) !important; ">
+              background-image: url('../.utils/images/yoga.jpg');
+               background-repeat: repeat;
+               background-attachment: fixed;
+              background-size: cover;
+             background-position: center;
+               background-blend-mode: multiply;
+            background-color: rgba(0, 0, 0, 0.7) !important; ">
    
    <div class=" p-3 container-fluid container text-center  ">
 
@@ -79,6 +79,7 @@ background-image: url('../.utils/images/yoga.jpg');
       </div>
 
 
+      <!-- fare controllo per vedere se è vuoto--><input id="cart_hidden" type="text" name="cart_hidden">
 
    <div class="col">
       <!--seconda card-->
