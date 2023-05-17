@@ -24,8 +24,6 @@ images, title, price, buttons, & Total price
 When basket is blank -> show's Cart is Empty
 */
 let generateCartItems = () => {
-  console.log(localStorage)
-  console.log(localStorage.data)
   if (basket.length !== 0) {
     return (ShoppingCart.innerHTML = basket.map((x) => {
         let { id, item } = x;
