@@ -46,8 +46,8 @@ background-image: url('../.utils/images/yoga.jpg');
    <div class=" p-3 container-fluid container text-center  ">
 
       <div class=" p-3 container-fluid container text-center ">
-      <h2>HI, </h2>
-      <h1 >WELCOME <span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
+      <h2><span class="badge text-light">HI,</span> </h2>
+      <h1 ><span class="badge text-light">WELCOME </span><span class="badge text-bg-danger">  <?php  echo  $_SESSION['name'] ?></span></h1>
 
    </div>
 
@@ -70,7 +70,7 @@ background-image: url('../.utils/images/yoga.jpg');
          <a href="../html/shop.html" class="btn "><div  style="width: 18rem;">
             <img src="../.utils/images/shop_grigio.png" class="card-img-top" alt="shop">
             <div class="card-body">
-               <h5 class="card-title"><span class="badge text-bg-dark">SHOP</span></h5>
+               <h5 class="card-title"><span class="badge text-light">SHOP</span></h5>
               
             </div>
             
@@ -86,7 +86,7 @@ background-image: url('../.utils/images/yoga.jpg');
       <a href="checkout.php" class="btn"><div  style="width: 18rem;">
   <img src="../.utils/images/payment_grigio.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title "><span class="badge text-bg-dark"> CHECKOUT</span></h5>
+    <h5 class="card-title "><span class="badge text-light"> CHECKOUT</span></h5>
     
   </div>
  
@@ -103,7 +103,7 @@ background-image: url('../.utils/images/yoga.jpg');
          <div class=" pippo" style="width: 18rem;">
             <img src="../.utils/images/logout_grigio.png" class="card-img-top" alt="...">
             <div class="card-body">
-               <h5 class="card-title"><span class="badge text-bg-dark">LOGOUT</span></h5>
+               <h5 class="card-title"><span class="badge text-light">LOGOUT</span></h5>
                
             </div>
          </div></a>
