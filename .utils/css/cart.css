@@ -1,6 +1,6 @@
 /* fa styiling */
-.fa .fa-circle-x .fa-minus .fa-plus {
-  cursor: pointer;
+.fa-solid {
+  cursor: pointer !important;
 }
 
 .fa-circle-xmark, .fa-minus {
@@ -52,11 +52,11 @@
 }
 
 .removeAll {
-  background-color: red;
+  background-color: var(--main-color);
 }
 
 .HomeBtn:hover{
-  background-color: black;
+  background-color: rgb(125, 0, 0);
   transition: 1s;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .removeAll:hover {
-  background-color: brown;
+  background-color: rgb(125, 0, 0);
   transition: 1s;
 }
 
@@ -84,11 +84,11 @@
   align-items: center;
   vertical-align: middle;
   border-bottom: 2px solid #212529;
+  max-width: 600px;
 }
 
 .cart-item:last-of-type{
   border: none;
-
 }
 
 .cart-item img {
