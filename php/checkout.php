@@ -24,15 +24,27 @@ if(isset($_POST['submit'])){
     $bill_state=mysqli_real_escape_string($conn,$_POST['billing-state']);
     $bill_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
 
-
-
     $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
-    $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
-    $ship_address=mysqli_real_escape_string($conn,$_POST['shipping-addr']);
-    $ship_city=mysqli_real_escape_string($conn,$_POST['shipping-city']);
-    $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
-    $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
-    
+
+
+    if($ship_full_name==''){
+        $ship_full_name=mysqli_real_escape_string($conn,$_POST['billing-name']);
+        $ship_email=mysqli_real_escape_string($conn,$_POST['billing-email']);
+        $ship_address=mysqli_real_escape_string($conn,$_POST['billing-addr']);
+        $ship_city=mysqli_real_escape_string($conn,$_POST['billing-city']);
+        $ship_state=mysqli_real_escape_string($conn,$_POST['billing-state']);
+        $ship_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
+
+    }
+
+    else{
+        $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
+        $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
+        $ship_address=mysqli_real_escape_string($conn,$_POST['shipping-addr']);
+        $ship_city=mysqli_real_escape_string($conn,$_POST['shipping-city']);
+        $ship_state=mysqli_real_escape_string($conn,$_POST['shipping-state']);
+        $ship_postal_code=mysqli_real_escape_string($conn,$_POST['shipping-postal-code']);
+    }
 
    
     $email_login=mysqli_real_escape_string($conn,$_SESSION['email']);
@@ -97,7 +109,7 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <label><i class="fa-solid fa-user"></i> Name on card*: <input type="text" name="card-name" value="" placeholder="Jhon Doe"></label>
-                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" name="card-number" value="" placeholder="1111-2222-3333-4444"></label>
+                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" name="card-number" value="" placeholder="1111-2222-3333-4444" maxlength="16" minlength="16"></label>
                     <label><i class="fa-solid fa-calendar-days"></i> Expiration date*: <input type="month" name="card-exp" value="2023-05" min="2023-05" ></label>
                     <label><i class="fa-solid fa-credit-card"></i> CVV*: <input type="text" name="card-cvv" value="" placeholder="123" maxlength="3" minlength="3"></label>
                 </fieldset>
