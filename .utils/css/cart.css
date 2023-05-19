@@ -99,7 +99,11 @@
 .title-price-x {
   width: auto;
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.title-price-x h3{
+  padding: 0rem 1rem;
 }
 
 .title-price {
@@ -114,6 +118,8 @@
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .details {
@@ -123,7 +129,6 @@
   justify-content: space-around;
   gap: 2rem;
   width: 100%;
-  padding: 0rem 4rem;
 }
 
 .buttons {
@@ -134,12 +139,23 @@
   font-size: 16px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   .cart-item {
     flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .cart-item img {
+    width: 50%;
+    height: auto;
   }
 
   .details {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .cart-item-price{
+    margin: 0 auto;
   }
 }
