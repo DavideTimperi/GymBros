@@ -84,10 +84,10 @@ if(!isset($_SESSION['email'])){
    <div class="col">
       <!--seconda card-->
 
-      <a href="checkout.php" class="btn"><div  style="width: 18rem;">
-  <img src="../.utils/images/payment_grigio.png" class="card-img-top" alt="...">
+      <a href="../html/cart.html" class="btn"><div  style="width: 18rem;">
+  <img src="../.utils/images/icona_shopping-cart.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title "><span class="badge text-light"> CHECKOUT</span></h5>
+    <h5 class="card-title "><span class="badge text-light"> CART</span></h5>
     
   </div>
  
