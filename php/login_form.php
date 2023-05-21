@@ -1,13 +1,3 @@
-<script>
-function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-</script>
 <?php
 
 @include 'config.php';
@@ -58,6 +48,16 @@ if(isset($_POST['submit']))
    <link rel="stylesheet" href="../.utils/css/login.css">
    <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon">
 
+   <script>
+      function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+         x.type = "text";
+      } else {
+         x.type = "password";
+      }
+      }
+   </script>
 </head>
 <body>
 
