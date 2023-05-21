@@ -99,7 +99,7 @@ if(!isset($_SESSION['email'])){
             <!--terza card-->
             <div class="col">
                <a href="logout.php" class="btn  " >
-                  <div class="card-body">
+                  <div class="card-body logout">
                      <img src="../.utils/images/logout_grigio.png" class="card-img-top" alt="...">
                      <h5 class="card-title"><span class="badge text-light">LOGOUT</span></h5>
                   </div>
@@ -110,18 +110,19 @@ if(!isset($_SESSION['email'])){
       </div>
 
       <!--<img src="../.utils/images/yoga.jpg" class="img-fluid" alt="...">-->
-      <script>
-         $('.pippo').click(() => {
+
+   </body>
+   
+   <script>
+         $('.logout').click(() => {
             localStorage.clear()
          });
-      </script>
+   </script>
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
-   </body>
 
 
 </html>
