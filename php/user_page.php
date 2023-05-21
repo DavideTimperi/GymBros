@@ -5,7 +5,7 @@
 session_start();
 
 
-//controllo per vedere se sei loggato
+
 if(!isset($_SESSION['email'])){
    header('location:login_form.php');}
 
