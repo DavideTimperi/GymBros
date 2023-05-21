@@ -34,9 +34,6 @@ if(!isset($_SESSION['email'])){
    <style>
       body {
          height: 100vh;
-         
-         vertical-align: middle;
-         margin: 0 auto;
 
          background-image: url('../.utils/images/yoga.jpg');
          background-repeat: repeat;
@@ -49,8 +46,20 @@ if(!isset($_SESSION['email'])){
 
       .row {
          display: flex;
-         margin: 0 auto;
+         justify-content: center;
+         vertical-align: middle;
       }
+
+      .card-body {
+         max-width: 250px;
+      }
+
+      @media (max-width: 750px){
+         .row {
+            flex-direction: column;
+         }
+      }
+
    </style>
    <!--<body background="../.utils/images/pale.png">-->
 
@@ -69,7 +78,7 @@ if(!isset($_SESSION['email'])){
             <div class="col">
                <a href="../html/shop.html" class="btn ">
                   <div class="card-body">
-                     <i class="bi bi-alarm-fill" style="font-size: 12rem; color: white;"></i>
+                     <img src="../.utils/images/shop_grigio.png" class="card-img-top" alt="shop">
                      <h5 class="card-title"><span class="badge text-light">SHOP</span></h5>
                   </div>
                </a>
