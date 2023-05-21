@@ -98,7 +98,7 @@
 }
 
 .about .content .read-more-text--show{
-    display: inline;
+    display: inline;                        /*---*/
 }
 
 .aboutBtn {
