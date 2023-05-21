@@ -93,6 +93,14 @@
     margin-bottom: var(--mb-1);
 }
 
+.about .content .read-more-text{
+    display: none;
+}
+
+.about .content .read-more-text--show{
+    display: inline;
+}
+
 .aboutBtn {
     border: 2px solid var(--main-color);
     padding:  4px;
