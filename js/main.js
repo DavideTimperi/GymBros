@@ -54,20 +54,18 @@ window.addEventListener("scroll", scrollactive);
 
 
 
+// ---------- read more/less ----------
 
+const container = document.querySelector(".about");
 
-// ---------- header: profile section ----------
+container.addEventListener("click", event => {
+    const current = event.target;
+    const isReadMoreBtn = current.className.includes("read-more-btn");
+    if (!isReadMoreBtn) return;
+    const currentText = event.target.parentNode.querySelector(".read-more-text");
 
-const openMenu = document.querySelector("#show-menu");
-const hideMenuIcon = document.querySelector("#hide-menu");
-const sideMenu = document.querySelector("#nav-menu");
-
-
-openMenu.addEventListener("click", function(){
-    sideMenu.classList.add("active");
+    currentText.classList.toggle("read-more-text--show");
+    current.textContent = current.textContent.includes("Read More") ? "...Read Less" : "Read More...";
 })
 
-hideMenuIcon.addEventListener("click", function(){
-    sideMenu.classList.remove("active");
-})
 

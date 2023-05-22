@@ -102,16 +102,17 @@
 }
 
 .form-container form .form-btn{
-   background: #fbd0d9;
-   color:crimson;
+   background: rgb(212, 10, 10);
+   color:white;
    text-transform: capitalize;
    font-size: 20px;
    cursor: pointer;
+   transition: 1s;
 }
 
 .form-container form .form-btn:hover{
-   background: crimson;
-   color:#fff;
+   background-color: rgb(125, 0, 0);
+   transition: 1s;
 }
 
 .form-container form p{

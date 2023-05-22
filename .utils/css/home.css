@@ -93,6 +93,14 @@
     margin-bottom: var(--mb-1);
 }
 
+.about .content .read-more-text{
+    display: none;
+}
+
+.about .content .read-more-text--show{
+    display: inline;                        /*---*/
+}
+
 .aboutBtn {
     border: 2px solid var(--main-color);
     padding:  4px;
@@ -280,6 +288,7 @@ a{
     gap: 2rem;
 }
 
+/* 
 .contact .form h2{
     margin-bottom: var(--mb-3);
     font-size: 1.5rem;
@@ -302,7 +311,7 @@ input:nth-child(5){
     color: white;
     width: 8rem;
     cursor: pointer;
-}
+} */
 
 input:nth-child(5):hover{
     opacity: 0.8;
@@ -316,7 +325,7 @@ input:nth-child(5):hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 12px;
     display: flex;
     justify-content: center;
     align-items: center;

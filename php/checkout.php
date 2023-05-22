@@ -108,20 +108,20 @@ if(isset($_POST['submit'])){
                         <p>Required fields*</p>
                     </div>
 
-                    <label><i class="fa-solid fa-user"></i> Name on card*: <input type="text" name="card-name" value="" placeholder="Jhon Doe"></label>
-                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input type="text" name="card-number" value="" placeholder="1111-2222-3333-4444" maxlength="16" minlength="16"></label>
-                    <label><i class="fa-solid fa-calendar-days"></i> Expiration date*: <input type="month" name="card-exp" value="2023-05" min="2023-05" ></label>
-                    <label><i class="fa-solid fa-credit-card"></i> CVV*: <input type="text" name="card-cvv" value="" placeholder="123" maxlength="3" minlength="3"></label>
+                    <label><i class="fa-solid fa-user"></i> Name on card*: <input required type="text" name="card-name" value="" placeholder="Jhon Doe"></label>
+                    <label><i class="fa-solid fa-money-check"></i> Card number*: <input required type="text" name="card-number" value="" placeholder="1111-2222-3333-4444" maxlength="16" minlength="16"></label>
+                    <label><i class="fa-solid fa-calendar-days"></i> Expiration date*: <input required type="month" name="card-exp" value="2023-05" min="2023-05" ></label>
+                    <label><i class="fa-solid fa-credit-card"></i> CVV*: <input required type="text" name="card-cvv" value="" placeholder="123" maxlength="3" minlength="3"></label>
                 </fieldset>
 
                 <fieldset>
                     <h3>Billing address</h3>
-                    <label><i class="fa-solid fa-id-card"></i> Full name*: <input type="text" name="billing-name" value="" placeholder="Jhon M. Doe"></label>
-                    <label><i class="fa-solid fa-envelope"></i> Email*: <input type="email" name="billing-email" value="" placeholder="jhon@example.com" pattern="[a-zA-Z]+\@[a-zA-Z]+\.[a-zA-Z]+"></label>
-                    <label><i class="fa-solid fa-road"></i> Address*: <input type="text" name="billing-addr" value="" placeholder="Via del corso 31"></label>
-                    <label><i class="fa-solid fa-building"></i> City*: <input type="text" name="billing-city" value="" placeholder="Rome"></label>
-                    <label><i class="fa-solid fa-flag"></i> State*: <input type="text" name="billing-state" value="" placeholder="Italy"></label>
-                    <label><i class="fa-solid fa-truck-front"></i> Postal code*: <input type="text" name="billing-postal-code" value="" placeholder="00012" maxlength="5" minlength="5"></label>
+                    <label><i class="fa-solid fa-id-card"></i> Full name*: <input required type="text" name="billing-name" value="" placeholder="Jhon M. Doe"></label>
+                    <label><i class="fa-solid fa-envelope"></i> Email*: <input required type="email" name="billing-email" value="" placeholder="jhon@example.com" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"></label>
+                    <label><i class="fa-solid fa-road"></i> Address*: <input required type="text" name="billing-addr" value="" placeholder="Via del corso 31"></label>
+                    <label><i class="fa-solid fa-building"></i> City*: <input required type="text" name="billing-city" value="" placeholder="Rome"></label>
+                    <label><i class="fa-solid fa-flag"></i> State*: <input required type="text" name="billing-state" value="" placeholder="Italy"></label>
+                    <label><i class="fa-solid fa-truck-front"></i> Postal code*: <input required type="text" name="billing-postal-code" value="" placeholder="00012" maxlength="5" minlength="5"></label>
                     <label><input id="hide-check" type="checkbox" class="inline" checked>Shipping address is the same as billing one</label>
                 </fieldset>
                 
