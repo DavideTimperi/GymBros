@@ -93,6 +93,10 @@
     margin-bottom: var(--mb-1);
 }
 
+.about .content .read-more-btn{
+    cursor: pointer;
+}
+
 .about .content .read-more-text{
     display: none;
 }
