@@ -271,9 +271,9 @@ a{
 
 }
 
-.pricing .pricing-wraper .pricingBox:nth-child(2) .btn{
+/* .pricing .pricing-wraper .pricingBox:nth-child(2) .btn{
     background-color: var(--main-color);
-}
+} */
 
 .pricing .pricing-wraper .pricingBox .btn:hover{
     opacity: 0.8;
