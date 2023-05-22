@@ -143,7 +143,7 @@ input[type="checkbox"]{
 }
 
 .redirect-button:hover {
-  background-color: brown;
+  background-color: rgb(122, 17, 17);
   transition: 0.5s;
 }
 

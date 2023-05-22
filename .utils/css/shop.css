@@ -138,7 +138,7 @@
 }
       
 .load-more:hover {
-    background: #7a1111;
+    background: rgb(122, 17, 17);
     color: #fff;
     transition: 1s;
 }
