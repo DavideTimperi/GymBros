@@ -34,12 +34,13 @@
     padding-bottom: 0rem;
 }
 
-
 /* shop */
 .shop {
-    display: grid;
+    display: grid -ms-grid;
     grid-template-columns: repeat(4, auto);
+    -ms-grid-columns: repeat(4, auto);
     gap: 2rem 3rem;
+    -ms-grid-gap: 2rem 3rem;
     justify-content: center;
     padding: 6rem;
     padding-top: 2rem !important;
@@ -48,6 +49,7 @@
   @media (max-width: 1000px) {
     .shop {
       grid-template-columns: repeat(2, auto);
+      -ms-grid-columns: repeat(2, auto);
       padding: 3rem;
     }
     #list {
@@ -58,12 +60,21 @@
   @media (max-width: 500px) {
     .shop {
       grid-template-columns: repeat(1, auto);
+      -ms-grid-columns: repeat(1, auto);
     }
   }
   
 .item {
-    display: flex;
+    display: flex -webkit-box -moz-box -ms-flexbox -webkit-flex;
+
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction:reverse;
+    -moz-box-direction:reverse;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
     justify-content: center;
     align-items: center;
     gap: 1rem 1rem;
@@ -89,24 +100,48 @@
 }
   
 .details {
-    text-align: center;
-    display: flex;
+    display: flex -webkit-box -moz-box -ms-flexbox -webkit-flex;
+
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-direction:reverse;
+    -moz-box-direction:reverse;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    text-align: center;
     padding: 1rem 2rem 2rem 2rem;
     gap: 10px;
 }
   
 .price-quantity {
-    display: flex;
+    display: flex -webkit-box -moz-box -ms-flexbox -webkit-flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+
     justify-content: space-between;
     align-items: center;
 }
 
 /* button */
 .buttons {
-    display: flex;
+    display: flex -webkit-box -moz-box -ms-flexbox -webkit-flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    
     gap: 8px;
     font-size: 16px;
 }
