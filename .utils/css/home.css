@@ -93,6 +93,10 @@
     margin-bottom: var(--mb-1);
 }
 
+.about .content .read-more-btn{
+    cursor: pointer;
+}
+
 .about .content .read-more-text{
     display: none;
 }
@@ -271,9 +275,9 @@ a{
 
 }
 
-.pricing .pricing-wraper .pricingBox:nth-child(2) .btn{
+/* .pricing .pricing-wraper .pricingBox:nth-child(2) .btn{
     background-color: var(--main-color);
-}
+} */
 
 .pricing .pricing-wraper .pricingBox .btn:hover{
     opacity: 0.8;
