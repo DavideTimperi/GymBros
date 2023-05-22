@@ -124,7 +124,6 @@ footer{
 
 .right form input, .right form textarea{
 	width: 100%;
-	max-width: 700px;
 	font-size: 1rem;
 	background: #151515;
 	padding-left: 10px;
