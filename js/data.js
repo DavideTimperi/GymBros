@@ -1,3 +1,4 @@
+/*the list of the items in the shop*/
 let shopItemsData = [
   {
     id: "one_month",
