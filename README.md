@@ -9,7 +9,8 @@ All rights reserved.
 ## Authors
 - TIMPERI DAVIDE 1950722
 - SERI RICCARDO 1887751
-- 
+- PAUL DRAGOS BUDURCA 1934644
+
 ## Technologies
 - HTML5
 - CSS3
@@ -19,23 +20,17 @@ All rights reserved.
 - SQL
 - Fontawesome
 - Boxicon 2.0.9
+
 ## Tools
 - Visual Studio Code
-    - Sa
-    - asf
-    - afe   
+    - HTML CSS Support v1.13.1
+    - JavaScript (ES6) code snippets v1.8.0
+    - Live Server v5.7.9
+    - PHP Server v3.0.2
+    - PHP Intelephense v1.9.5
 - Xampp
+- Chrome v113.0.5672.127
 
-
-Visual Studio Code:
-HTML CSS Support v1.12.2 ;
-JavaScript (ES6) code snippets v1.8.0 ;
-Live Server v5.7.5 ;
-PHP Server v3.0.2 ;
-PgAdmin ;
-Chrome v101.0.4951 ;
-Firefox v100.0.2 ;
-Microsoft Edge v101.0.1210 .
 ## Structure
 The website is divided in folders. We different folders for different programming languages (HTML, js, PHP). Plus, we used a "hidden" folder called .utils that has two subfolders, images (with another subfolder for the images of the products) and css (for all the css files). Every page is connected, eventually, to a related css file and/or a Javascript file. The interactions with the database are done with PHP.
 
@@ -74,7 +69,7 @@ The website is divided in folders. We different folders for different programmin
 - login.css: style the login/register page.
 - shop.css: style the shop page.
 - staff.css: style the staff page.
-## Use
-Importare la cartella “sito-internet” su Visual Studio per l’avvio corretto del sito (o selezionare apri con).
 
-Per accedere alla sezione riservata del ristoratore registrarsi con l’email “emaildelristoratore@prova.com” ed effettuare il login con tale email (la password è a scelta dell’ipotetico ristoratore).
+## Use
+Import the correct repository from github: https://github.com/DavideTimperi/GymBros/tree/main.
+Set up Xampp with Apache and SQL. 
