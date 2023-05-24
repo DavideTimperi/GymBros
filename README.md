@@ -42,13 +42,13 @@ The website is divided in folders. We different folders for different programmin
 - thank_you.html: not navigable html page to thank you the user for the payment done in checkout.
 
 #### PHP
-- checkout.php:
-- config.php:
-- confing_order.php:
-- login_form.php:
-- logout.php:
-- register_form.php:
-- user_page.php:
+- checkout.php: saves the datas of each order from the form in the database called order_db.
+- config.php: connect the page "login_form.php" and "register_form.php" to the users database. 
+- confing_order.php:  connect the page "checkout.php" to the order database.
+- login_form.php: takes the info about the client, like e-mail and password to login at the website.
+- logout.php: destroy the session and the user is logout of the website.
+- register_form.php: is a form wich takes the info required to subscribes to the website.
+- user_page.php: is the page in wich the user is redicted when he login to the website.
 
 #### Javascript
 - cart.js: generate the items added in the cart, with a modifiable quantity and a X mark to delete the element. It is displayed the overall price to pay. If the cart is empty, we have a button to return to shop. Otherwise, we have a checkout button and a clear cart.
@@ -72,4 +72,15 @@ The website is divided in folders. We different folders for different programmin
 
 ## Use
 Import the correct repository from github: https://github.com/DavideTimperi/GymBros/tree/main.
-Set up Xampp with Apache and SQL. 
+Set up Xampp with Apache and MySQL. 
+Database info:
+-User database: hostname='localhost'
+                username='root'
+                password=''
+                database='user_db'
+-Order database: hostname='localhost'
+                 username='root'
+                 password=''
+                 database='order_db'
+
+
