@@ -3,7 +3,7 @@
 @include 'config.php';
 
 session_start();
-
+//ceck if the user is login
 if(!isset($_SESSION['email'])){
    header('location:login_form.php');
 }
@@ -72,7 +72,7 @@ if(!isset($_SESSION['email'])){
       <div class="container text-center " >
          <div class="row">
 
-            <!--prima card-->
+            <!--first card-->
             <div class="col">
                <a href="../html/shop.html" class="btn ">
                   <div class="card-body">
@@ -82,9 +82,9 @@ if(!isset($_SESSION['email'])){
                </a>
             </div>
 
-            <!-- fare controllo per vedere se è vuoto<input id="cart_hidden" type="text" name="cart_hidden">-->
+           
 
-            <!--seconda card-->
+            <!--second card-->
             <div class="col">
                <a href="../html/cart.html" class="btn">
                   <div class="card-body">
@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
                </a>
             </div>
 
-            <!--terza card-->
+            <!--third card-->
             <div class="col">
                <a href="logout.php" class="btn  " >
                   <div class="card-body logout">
@@ -108,7 +108,7 @@ if(!isset($_SESSION['email'])){
       </div>
 
    </body>
-   
+   <!-- script to clean the cart if the user logout-->
    <script>
          $('.logout').click(() => {
             localStorage.clear()

@@ -1,3 +1,4 @@
+<!-- a simple script to show the password and hide it again-->
 <script>
 function myFunction() {
   var x = document.getElementById("myInput");
@@ -25,7 +26,7 @@ if(isset($_POST['submit'])){
    $name = mysqli_real_escape_string($conn, $_POST['name']);
    $email = mysqli_real_escape_string($conn, $_POST['email']);
    $pass = md5($_POST['password']);
-   $cpass = md5($_POST['cpassword']);
+   $cpass = md5($_POST['cpassword']); //md5 is the crypto of the password
    
 
    $select = " SELECT * FROM user_form WHERE email = '$email'  ";

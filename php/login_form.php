@@ -1,3 +1,4 @@
+<!-- a simple script to show the password and hide it again-->
 <script>
 function myFunction() {
    var x = document.getElementById("myInput");

@@ -3,7 +3,7 @@
 @include 'confing_order.php';
 session_start();
 
-
+//ceck if the user is login
 if(!isset($_SESSION['email'])){
     header('location:login_form.php');}
 
@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
 
     $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
 
-
+    //if the ship_full_name is '' the billing address and the shipping one is the same so we take the values form the billing form
     if($ship_full_name==''){
         $ship_full_name=mysqli_real_escape_string($conn,$_POST['billing-name']);
         $ship_email=mysqli_real_escape_string($conn,$_POST['billing-email']);
@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
         $ship_postal_code=mysqli_real_escape_string($conn,$_POST['billing-postal-code']);
 
     }
-
+//if the shipping address and the billing one are not the same
     else{
         $ship_full_name=mysqli_real_escape_string($conn,$_POST['shipping-name']);
         $ship_email=mysqli_real_escape_string($conn,$_POST['shipping-email']);
