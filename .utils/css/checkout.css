@@ -123,6 +123,7 @@ input[type="checkbox"]{
   transition: 1s;
 }
 
+/*items in the cart*/
 #cart_hidden {
   display: none;
 }

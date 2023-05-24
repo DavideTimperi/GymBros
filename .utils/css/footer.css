@@ -14,6 +14,7 @@ footer{
 	text-align: justify;
 }
 
+/*all content*/
 .main-content{
 	display: flex;
 }
@@ -52,6 +53,7 @@ footer{
 	top: -10px;
 }
 
+/*left box*/
 .left .content p{
   text-align: justify;
 }
@@ -86,6 +88,7 @@ footer{
 	background: #f12020;
 }
 
+/*center box*/
 .center .content .fas{
 	font-size: 1.4375rem;
 	background: #1a1a1a;
@@ -112,6 +115,7 @@ footer{
 	margin: 15px 0;
 }
 
+/*right box*/
 .right form .text{
 	font-size: 1.0625rem;
 	margin-bottom: 2px;
@@ -159,6 +163,7 @@ footer{
 	color: #fff
 }
 
+/*copyright section*/
 .bottom {
     padding: 15px 0;
     text-align: center;
@@ -173,18 +178,18 @@ footer{
 }
 
 @media screen and (max-width: 900px) {
-  footer{
-    position: relative;
-    bottom: 0px;
-  }
-  .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main-content .box{
-    margin: 5px 0;
-  }
-  .right form textarea{
-	min-height: 150px;
-}
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+	.main-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box{
+		margin: 5px 0;
+	}
+	.right form textarea{
+		min-height: 150px;
+	}
 }
