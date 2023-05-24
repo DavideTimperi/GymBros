@@ -1,7 +1,13 @@
+/*
+Makes an alert with a message msg
+*/
 function messageAlert(msg) {
     alert(String(msg));
 }
 
+/*
+Change the HTML of the element with id='footer'
+*/
 function generateFooter() {
     let msg = "No muscles without patience! Coming soon!"
     document.getElementById("footer").innerHTML = `
@@ -58,6 +64,9 @@ function generateFooter() {
       <p><span class="far fa-copyright"></span><span> Copyrigth 3050 by nobody. All rights reserved.</span></p>
       </div>  
     `;
-  }
-  
-  generateFooter();
+}
+
+/*
+Execute the function
+*/
+generateFooter();
