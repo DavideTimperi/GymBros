@@ -71,4 +71,5 @@ The website is divided in folders. We different folders for different programmin
 - staff.css: style the staff page.
 
 ## Use
-Import the correct repository from github:
+Import the correct repository from github: https://github.com/DavideTimperi/GymBros/tree/main.
+Set up Xampp with Apache and SQL. 
