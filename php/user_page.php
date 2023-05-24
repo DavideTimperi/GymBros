@@ -4,10 +4,9 @@
 
 session_start();
 
-
-
 if(!isset($_SESSION['email'])){
-   header('location:login_form.php');}
+   header('location:login_form.php');
+}
 
 ?>
 
@@ -19,7 +18,7 @@ if(!isset($_SESSION['email'])){
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>user page</title>
+      
 
       <link rel="icon" href="../.utils/images/logo_icon.ico" type="image/x-icon">
       <link rel="stylesheet" href="../.utils/css/home.css">
@@ -29,12 +28,12 @@ if(!isset($_SESSION['email'])){
       <script src="../js/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/248ee2f927.js" crossorigin="anonymous"></script>
 
+      <title>user page</title>
    </head>
 
    <style>
       body {
          height: 100vh;
-
          background-image: url('../.utils/images/yoga.jpg');
          background-repeat: repeat;
          background-attachment: fixed;
@@ -61,7 +60,6 @@ if(!isset($_SESSION['email'])){
       }
 
    </style>
-   <!--<body background="../.utils/images/pale.png">-->
 
    <body>     
       <div class=" p-3 container-fluid container text-center  ">
@@ -109,8 +107,6 @@ if(!isset($_SESSION['email'])){
          </div>
       </div>
 
-      <!--<img src="../.utils/images/yoga.jpg" class="img-fluid" alt="...">-->
-
    </body>
    
    <script>
@@ -119,10 +115,8 @@ if(!isset($_SESSION['email'])){
          });
    </script>
 
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
 </html>
