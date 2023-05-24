@@ -1,14 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Poppins", sans-serif; 
-    scroll-behavior: smooth;
-}
-
 header{
     background-color: #292d36;
 }
@@ -62,7 +52,6 @@ header{
 }
 
 .img, .img2, .img3{
-    /* display: none; */
     display: flex;
     height: 400px;
     width: 400px;

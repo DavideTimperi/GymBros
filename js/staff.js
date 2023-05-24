@@ -58,7 +58,10 @@ $(document).ready(function(){
     
 });
 
-//
+
+// if we have a screen with less than 900px ( @media(max-width: 900px) from staff.css ) we will see the page in column, 
+// so to prevent carousels 2 and 3 from not being separated by a text paragraph I used the following function:
+
 $(window).on('load resize', function() { //Fires when window is loaded or resized
     var div1 = $('#div2');
     var div2 = $('#div1');
