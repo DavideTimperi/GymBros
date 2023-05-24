@@ -58,7 +58,7 @@ $(document).ready(function(){
     
 });
 
-
+//
 $(window).on('load resize', function() { //Fires when window is loaded or resized
     var div1 = $('#div2');
     var div2 = $('#div1');
