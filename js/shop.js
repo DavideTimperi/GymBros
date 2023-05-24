@@ -1,8 +1,17 @@
+/*
+
+  Define two variables:
+    - shop: target in the document the element with id='shop'
+    - basket: it is localStorage.data or a empty list
+
+*/
 let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 /*
-Generates the shop with product cards 
+
+  Generates the shop with all the product cards diven from data.js (aka shopItemsData) 
+
 */
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
@@ -31,7 +40,9 @@ let generateShop = () => {
 };
 
 /*
-Used to increase the selected product item quantity by 1
+
+  Used to increase the selected item quantity by 1 or to add the item in the basket
+
 */
 let increment = (id) => {
   let selectedItem = id;
@@ -52,7 +63,9 @@ let increment = (id) => {
 };
 
 /*
-Used to decrease the selected product item quantity by 1
+
+  Used to decrease the selected product item quantity by 1 or to remove it if the quantity = 0.
+
 */
 let decrement = (id) => {
   let selectedItem = id;
@@ -71,7 +84,9 @@ let decrement = (id) => {
 };
 
 /*
-To update the digits of picked items on each item card
+
+  Update the digits of picked items of each item
+
 */
 let update = (id) => {
   let search = basket.find((x) => x.id === id);
@@ -80,7 +95,9 @@ let update = (id) => {
 };
 
 /*
-To calculate total amount of selected Items
+
+  Calculate total amount of selected items
+
 */
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
@@ -88,7 +105,9 @@ let calculation = () => {
 };
 
 /*
-Load more
+  
+  Load more items on click
+
 */
 $(document).ready(function(){
   $(".load-more").click(function(){
@@ -97,6 +116,11 @@ $(document).ready(function(){
   });
 });
 
+/*
+
+  Execute the function
+  
+*/
 generateShop();
 calculation();
 
