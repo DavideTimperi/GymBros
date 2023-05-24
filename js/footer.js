@@ -1,12 +1,16 @@
 /*
-Makes an alert with a message msg
+
+  Makes an alert with a message msg
+
 */
 function messageAlert(msg) {
     alert(String(msg));
 }
 
 /*
-Change the HTML of the element with id='footer'
+
+  Change the HTML of the element with id='footer'
+
 */
 function generateFooter() {
     let msg = "No muscles without patience! Coming soon!"
@@ -67,6 +71,8 @@ function generateFooter() {
 }
 
 /*
-Execute the function
+
+  Execute the function
+  
 */
 generateFooter();
