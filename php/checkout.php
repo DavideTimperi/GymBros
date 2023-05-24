@@ -69,6 +69,7 @@ if(isset($_POST['submit'])){
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../.utils/css/header.css"> 
@@ -83,16 +84,10 @@ if(isset($_POST['submit'])){
     <body>
         <!-- Header -->
 
-        <!-- Checkout -->
-       
+        <!-- Checkout -->       
             <form id="checkout" method="post" action="">
                 <!--cart-summary -->
-
-
-
                 <input id="cart_hidden" type="text" name="cart_hidden">
-
-
 
                 <!-- payment method-->
                 <fieldset>
@@ -145,7 +140,7 @@ if(isset($_POST['submit'])){
 
         <!-- footer -->
 
-        <!-- main.js -->    
+        <!-- .js -->    
         <script src="../js/checkout.js"></script>
     </body>
 </html>
