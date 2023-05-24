@@ -1,3 +1,5 @@
+// ----- img slider functions -----
+
 $(document).ready(function(){
 
     var slider = $(".gallery");

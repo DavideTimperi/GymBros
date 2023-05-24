@@ -16,7 +16,7 @@ header{
 
 .carouselWraper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap:5rem;
     align-items: center;
 }
@@ -83,5 +83,22 @@ header{
 
     .carouselWraper .carousel{
         flex-direction: column;
+    }
+}
+
+@media(max-width: 700px){
+
+    .carouselWraper .carousel .billboard{
+        height: 300px;
+        width: 300px;
+    }
+    .img img, .img2 img, .img3 img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .img, .img2, .img3{
+        height: 300px;
+        width: 300px;
     }
 }
