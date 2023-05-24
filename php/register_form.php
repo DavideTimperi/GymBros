@@ -2,16 +2,16 @@
 function myFunction() {
   var x = document.getElementById("myInput");
   if (x.type === "password") {
-    x.type = "text";
+      x.type = "text";
   } else {
-    x.type = "password";
+      x.type = "password";
   }
   var y = document.getElementById("myInput2");
   if(y.type ==="password"){
-   y.type="text";
+      y.type="text";
   }
   else{
-   y.type="password";
+      y.type="password";
   }
 }
 </script>
@@ -30,21 +30,11 @@ if(isset($_POST['submit'])){
 
    $select = " SELECT * FROM user_form WHERE email = '$email'  ";
 
-   
-   
    $result=mysqli_query($conn, $select);
    
-
-   
-
    if(mysqli_num_rows($result) > 0 ){
-
       $error[] = 'email already used!';
-
-   }
-   
-   
-   else{
+   }else{
 
       if($pass != $cpass){
          $error[] = 'password not matched!';

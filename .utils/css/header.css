@@ -1,3 +1,4 @@
+
 /* ---------- general --------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
@@ -11,6 +12,8 @@
     font-family: "Poppins", sans-serif; 
     scroll-behavior: smooth;
 }
+
+
 /* scrollbar style */
 
 *::-webkit-scrollbar {
@@ -27,7 +30,8 @@
     border-radius: 10px;
 }
 
-/* variable css */
+
+/* variable css for home*/
 
 :root{
         /* margin bottom */
@@ -41,7 +45,6 @@
     --pricing-btn-color: #797f8b;
     --footerBg-color: #292d36;
     --section-color: #f9f9f9;
-    
     --favorite-color: rgba(0, 0, 0, 0.3);
 
 }
@@ -64,6 +67,7 @@ section:nth-child(even){
     background-color: var(--section-color);
 }
 
+
 /* ---------- header ---------- */
 
 header{
@@ -85,7 +89,7 @@ header .headerWraper{
 
 .headerWraper .nav{
     display: flex;
-    align-items: center;  /**/
+    align-items: center;
 }
 
 .headerWraper .nav a{
@@ -97,7 +101,7 @@ header .headerWraper{
 
 .headerWraper .right{
     display: flex;
-    align-items: center;  /**/
+    align-items: center;
 }
 
 .headerWraper .right a{
@@ -106,27 +110,6 @@ header .headerWraper{
     font-weight: 500;
     color: #fff;
 }
-
-/* ------------------------------------------------ ultime verifiche poi cancello -------------------------------------------------- */
-
-/*  fix the profile icon in staff.html */
- /*.headerWraper .nav i{
-    color: white;
-    padding-left: 2rem;
-} */
-/* ---------------------------------- */
-
-/*  fix the profile icon in home.html */
-/* .headerWraper .login-icon{
-    margin-left: 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    padding-left: 2rem;
-} */
-/* ---------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------- */
-
 
 li{
     list-style: none;
@@ -142,12 +125,14 @@ li{
     display: none;
 }
 
+
 /* ---------- sticky navbar  ---------- */
 
 .sticky{
     height: 3rem;
     background-color: var(--footerBg-color);
 }
+
 
 /* ---------- scroll up btn  ---------- */
 
@@ -173,22 +158,17 @@ li{
 
 
 .nav-link:hover{
-    color: var(--main-color) !important;  /* we need !important because we
-     alredy assigned a color to .headerWraper .nav a */
+    color: var(--main-color) !important;
 }
 
 
-
-
-/* -----------------------------------     cart icon style      --------------------------------------------- */
+/* ---------- cart icon style ---------- */
 
 .cart {
     position: relative;
     color: #fff;
-    /* font-size: 30px; */
     font-size: 1rem;
     padding: 5px;
-    /* padding: 0 1rem; */
     border-radius: 4px;
 
 }
@@ -204,21 +184,13 @@ li{
     border-radius: 20px;
 }
 
-
-
-/* ------------------------------------------------------------------------------------------------------------ */
-
-
-
-
-
-
-
-
-
+.bx {
+    cursor:pointer;
+}
 
 
 @media(max-width:780px){
+
     .headerWraper .menu{
         display: block;
         color: white;
@@ -251,19 +223,17 @@ li{
         color: white;
         margin-left: 0;
     }
+
     .nav.active{
         top:3rem;
     }
+    
     .headerWraper{
-        background-color: #202329;      /* leggermente sfocato da var(--footerBg-color) */
+        background-color: #202329;
     }
 
     .headerWraper .nav li i{
         margin-left: -2rem;
     }
 
-}
-
-.bx {
-    cursor:pointer;
 }

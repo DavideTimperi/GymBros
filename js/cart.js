@@ -2,14 +2,17 @@ let ShoppingCart = document.getElementById("shopping-cart");
 let label = document.getElementById("label");
 
 /*
-Basket to hold all the selected items
-the getItem part is retrieving data from the local storage
-if local storage is blank, basket becomes an empty array
+
+  Basket to hold all the selected items. The getItem part is retrieving data from the local storage
+  if local storage is blank, basket becomes an empty array
+
 */
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 /*
-To calculate total amount of selected Items
+
+  Calculate total amount of selected Items
+
 */
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
@@ -19,9 +22,11 @@ let calculation = () => {
 calculation();
 
 /*
-Generates the Cart Page with product cards composed of
-images, title, price, buttons, & Total price
-When basket is blank -> show's Cart is Empty
+
+  Generates the Cart Page with product cards composed of
+  images, title, price, buttons, & Total price
+  When basket is blank -> show's Cart is Empty
+
 */
 let generateCartItems = () => {
   if (basket.length !== 0) {
@@ -70,7 +75,9 @@ let generateCartItems = () => {
 
 
 /*
-used to increase the selected product item quantity by 1
+
+  Used to increase the selected product item quantity by 1 or add it if not in the cart
+
 */
 let increment = (id) => {
   let selectedItem = id;
@@ -91,7 +98,9 @@ let increment = (id) => {
 };
 
 /*
-used to decrease the selected product item quantity by 1
+
+  Used to decrease the selected product item quantity by 1 or remove if it reach 0
+
 */
 let decrement = (id) => {
   let selectedItem = id;
@@ -110,7 +119,9 @@ let decrement = (id) => {
 };
 
 /*
-To update the digits of picked items on each item card
+
+  To update the digits of picked items on each item card
+
 */
 let update = (id) => {
   let search = basket.find((x) => x.id === id);
@@ -120,8 +131,10 @@ let update = (id) => {
 };
 
 /*
-Used to remove 1 selected product card from basket
-using the X [cross] button
+
+  Used to remove 1 selected product card from basket
+  using the X [cross] button
+
 */
 let removeItem = (id) => {
   let selectedItem = id;
@@ -133,9 +146,10 @@ let removeItem = (id) => {
 };
 
 /*
-Used to calculate total amount of the selected Products
-with specific quantity
-When basket is blank, it will show nothing
+
+  Used to calculate total amount of the selected products 
+  with specific quantity. When basket is blank, it will show nothing
+
 */
 let TotalAmount = () => {
   if (basket.length !== 0) {
@@ -156,7 +170,9 @@ let TotalAmount = () => {
 };
 
 /*
-Used to clear cart, and remove everything from local storage
+
+  Used to clear cart and remove everything from local storage
+
 */
 let clearCart = () => {
   basket = [];
@@ -165,5 +181,10 @@ let clearCart = () => {
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
+/*
+
+  Execute the functions
+
+*/
 generateCartItems();
 TotalAmount();

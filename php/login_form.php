@@ -1,11 +1,11 @@
 <script>
 function myFunction() {
-  var x = document.getElementById("myInput");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
+   var x = document.getElementById("myInput");
+   if (x.type === "password") {
+         x.type = "text";
+   } else {
+         x.type = "password";
+   }
 }
 </script>
 <?php
@@ -32,10 +32,10 @@ if(isset($_POST['submit']))
 
 
      
-         $row=mysqli_fetch_array($result);
-         $_SESSION['email']=$row['email'];
-         $_SESSION['name']=$row['name'];
-          header('location:user_page.php');
+      $row=mysqli_fetch_array($result);
+      $_SESSION['email']=$row['email'];
+      $_SESSION['name']=$row['name'];
+      header('location:user_page.php');
 
       
      
