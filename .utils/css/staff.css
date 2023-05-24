@@ -52,7 +52,6 @@ header{
     display: flex;
 }
 
- 
 .img img, .img2 img, .img3 img{
     display: flex;
     height: 400px;
@@ -71,7 +70,6 @@ header{
     align-items: center;
     justify-content: center;
 }
-
 
 .carouselWraper .carousel .content{
     flex: 1 1 20rem;
