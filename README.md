@@ -46,8 +46,8 @@ The website is divided in folders. Each folder contain a different programming l
 - confing_order.php:  connect the page "checkout.php" to the order database.
 - login_form.php: takes the info about the client, like e-mail and password to login at the website.
 - logout.php: destroy the session and the user is logout of the website.
-- register_form.php: is a form wich takes the info required to subscribes to the website.
-- user_page.php: is the page in wich the user is redicted when he login to the website.
+- register_form.php: is a form which takes the info required to subscribes to the website.
+- user_page.php: is the page in which the user is redicted when he login to the website.
 
 #### Javascript
 - cart.js: generate the items added in the cart, with a modifiable quantity and a X mark to delete the element. It is displayed the overall price to pay. If the cart is empty, we have a button to return to shop. Otherwise, we have a checkout button and a clear cart.
