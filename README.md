@@ -29,7 +29,6 @@ All rights reserved.
     - PHP Server v3.0.2
     - PHP Intelephense v1.9.5
 - Xampp
-- Chrome v113.0.5672.127
 
 ## Structure
 The website is divided in folders. Each folder contain a different programming languages (HTML, js, PHP). Plus, we used a "hidden" folder called .utils that has two subfolders, images (with another subfolder for the images of the products) and css (for all the css files). Every page is connected, eventually, to a related css file and/or a Javascript file. The interactions with the database are done with PHP.
