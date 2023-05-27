@@ -1,16 +1,11 @@
-/*
-
-  Define two variables:
-    - shop: target in the document the element with id='shop'
-    - basket: it is localStorage.data or a empty list
-
-*/
 let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 /*
 
-  Generates the shop with all the product cards diven from data.js (aka shopItemsData) 
+  Generates the shop with all the product cards
+  with id, image, name, description, quantity 
+  given in data.js (aka shopItemsData) 
 
 */
 let generateShop = () => {
@@ -41,7 +36,8 @@ let generateShop = () => {
 
 /*
 
-  Used to increase the selected item quantity by 1 or to add the item in the basket
+  Used to increase the selected item quantity 
+  by 1 or to add the item in the basket
 
 */
 let increment = (id) => {
@@ -64,7 +60,8 @@ let increment = (id) => {
 
 /*
 
-  Used to decrease the selected product item quantity by 1 or to remove it if the quantity = 0.
+  Used to decrease the selected product item 
+  quantity by 1 or to remove it if the quantity = 0.
 
 */
 let decrement = (id) => {
@@ -85,7 +82,8 @@ let decrement = (id) => {
 
 /*
 
-  Update the digits of picked items of each item
+  Update the digits of picked items 
+  of each item
 
 */
 let update = (id) => {

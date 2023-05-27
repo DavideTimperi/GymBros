@@ -3,7 +3,7 @@
 @include 'config.php';
 
 session_start();
-//ceck if the user is login
+//check if the user is logged
 if(!isset($_SESSION['email'])){
    header('location:login_form.php');
 }
@@ -72,7 +72,7 @@ if(!isset($_SESSION['email'])){
       <div class="container text-center " >
          <div class="row">
 
-            <!--first card-->
+            <!--first button-->
             <div class="col">
                <a href="../html/shop.html" class="btn ">
                   <div class="card-body">
@@ -84,7 +84,7 @@ if(!isset($_SESSION['email'])){
 
            
 
-            <!--second card-->
+            <!--second button-->
             <div class="col">
                <a href="../html/cart.html" class="btn">
                   <div class="card-body">
@@ -94,7 +94,7 @@ if(!isset($_SESSION['email'])){
                </a>
             </div>
 
-            <!--third card-->
+            <!--third button-->
             <div class="col">
                <a href="logout.php" class="btn  " >
                   <div class="card-body logout">

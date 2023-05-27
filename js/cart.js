@@ -3,7 +3,8 @@ let label = document.getElementById("label");
 
 /*
 
-  Basket to hold all the selected items. The getItem part is retrieving data from the local storage
+  Basket to hold all the selected items. 
+  The getItem part is retrieving data from the local storage
   if local storage is blank, basket becomes an empty array
 
 */
@@ -76,7 +77,8 @@ let generateCartItems = () => {
 
 /*
 
-  Used to increase the selected product item quantity by 1 or add it if not in the cart
+  Used to increase the selected product item 
+  quantity by 1 or add it if not in the cart
 
 */
 let increment = (id) => {
@@ -99,7 +101,8 @@ let increment = (id) => {
 
 /*
 
-  Used to decrease the selected product item quantity by 1 or remove if it reach 0
+  Used to decrease the selected product item 
+  quantity by 1 or remove if it reach 0
 
 */
 let decrement = (id) => {
@@ -120,7 +123,8 @@ let decrement = (id) => {
 
 /*
 
-  To update the digits of picked items on each item card
+  To update the digits of picked 
+  items on each item card
 
 */
 let update = (id) => {
@@ -148,7 +152,7 @@ let removeItem = (id) => {
 /*
 
   Used to calculate total amount of the selected products 
-  with specific quantity. When basket is blank, it will show nothing
+  with specific quantity. When basket is blank, it will show 0
 
 */
 let TotalAmount = () => {
@@ -171,7 +175,8 @@ let TotalAmount = () => {
 
 /*
 
-  Used to clear cart and remove everything from local storage
+  Used to clear cart and remove 
+  everything from local storage
 
 */
 let clearCart = () => {

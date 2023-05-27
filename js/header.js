@@ -1,3 +1,8 @@
+/*
+
+  Change the HTML of the element with id='header'
+
+*/
 function generateHeader() {
     document.getElementById("header").innerHTML = `
     <a href="#" class="scroll-up">
@@ -35,6 +40,11 @@ function generateHeader() {
     </div>
 </nav>
     `;
-  }
+}
   
-  generateHeader();
+/*
+
+  Execute the function
+  
+*/
+generateHeader();

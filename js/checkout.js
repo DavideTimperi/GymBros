@@ -1,5 +1,7 @@
 /*
-Show/Hide all the shipping part of the checkout
+
+  Show/Hide all the shipping part in the checkout
+
 */
 var cart_hidden = localStorage.data;
 document.getElementById('cart_hidden').value = cart_hidden;

@@ -3,7 +3,7 @@
 @include 'confing_order.php';
 session_start();
 
-//ceck if the user is login
+//check if the user is logged
 if(!isset($_SESSION['email'])){
     header('location:login_form.php');}
 
