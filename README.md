@@ -74,12 +74,12 @@ The website is divided in folders. Each folder contains a different programming 
 Import the correct repository from github: https://github.com/DavideTimperi/GymBros/tree/main.
 Set up Xampp with Apache and MySQL. 
 Database info:
--User database: 
+- User database: 
     - hostname='localhost'
     - username='root'
     - password=''
     - database='user_db'
--Order database: 
+- Order database: 
     - hostname='localhost'
     - username='root'
     - password=''
