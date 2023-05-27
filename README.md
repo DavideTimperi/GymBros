@@ -43,10 +43,10 @@ The website is divided in folders. Each folder contain a different programming l
 - thank_you.html: not navigable html page to thank you the user for the payment done in checkout.
 
 #### PHP
-- checkout.php: saves the datas of each order from the form in the database called order_db.
+- checkout.php: saves the data from each order done in the checkout page (form) in the database called order_db.
 - config.php: connect the page "login_form.php" and "register_form.php" to the users database. 
-- confing_order.php:  connect the page "checkout.php" to the order database.
-- login_form.php: takes the info about the client, like e-mail and password to login at the website.
+- confing_order.php: connect the page "checkout.php" to the order database.
+- login_form.php: takes the info about the client to login in the website.
 - logout.php: destroy the session and the user is logout of the website.
 - register_form.php: is a form which takes the info required to subscribes to the website.
 - user_page.php: is the page in which the user is redicted when he login to the website.
@@ -56,9 +56,9 @@ The website is divided in folders. Each folder contain a different programming l
 - checkout.js: hide or show the shipping fieldset based on a checked checkbox. If checked we hide the section and clear all the input fields.
 - data.js: list of json where all the products that we offers are stored.
 - footer.js: simply attach the footer in every page.
-- header.js: simply attach the header in every page.
-- main.js: give responsiveness to the page with scroll up. the menu in media query and a read more/less option.
-- shop.js: generate the items in the shop in different cards, with a modifiable quantity. It is displayed the first 4 elements at the beginning, but with a clock on "load more" button we can see all the products.
+- header.js: simply attach the header in every page (except home.html).
+- main.js: give responsiveness to the page with scroll up, the menu in media query and a read more/less option.
+- shop.js: generate the items in the shop in different cards, with a modifiable quantity. It display the first 4 elements at the beginning, but with a click on "load more" button we can see all the products.
 - staff.js: carousel for the staff page and a swap function.
 
 #### css
@@ -72,7 +72,7 @@ The website is divided in folders. Each folder contain a different programming l
 - staff.css: style the staff page.
 
 ## Use
-Import the correct repository from github: https://github.com/DavideTimperi/GymBros/tree/main.
+Import the correct repository from github: https://github.com/DavideTimperi/GymBros.
 Set up Xampp with Apache and MySQL. 
 Database info:
 - User database: 
